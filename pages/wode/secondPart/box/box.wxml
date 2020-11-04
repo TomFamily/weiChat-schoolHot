@@ -1,0 +1,58 @@
+<!--pages/wode/brow/brow.wxml-->
+<view class="row text3">
+	<view class="header-title {{item.id == tapID? 'header-title-active':''}}" data-id='{{item.id}}' wx:for="{{sLIst}}" bindtap='headerTitleClick'>{{item.name}}</view>
+</view>
+
+<view class="frameWork" wx:for="{{2}}" wx:if="{{tapID == 0}}">
+	<view class="articleTitle">
+		<image class="headerImage" bindtap="juamToDetail" src="/image/article2.png" id="{{item.id}}"></image>
+		<text class="titleName" bindtap="juamToDetail" id="{{item.id}}">男生洗澡很久不出来会在干什么呢？</text>
+	</view>
+	<text class="articleDetecle" bindtap="juamToDetail" id="{{item.id}}">配日文平日我王UR欧文如我我如我任务row
+  </text>
+	<view class="buttonPart">
+		<text class="praise" bindtap="juamToDetail" id="{{item.id}}">2020-08-14 10:16</text>
+
+	</view>
+</view>
+
+
+<view class="frameWork" wx:for="{{browArray}}" wx:if="{{tapID == 1}}">
+	<view class="articleTitle">
+		<image class="headerImage" bindtap="juamToDetail" src="/image/article2.png" id="{{item.id}}"></image>
+		<text class="titleName" bindtap="juamToDetail" id="{{item.id}}">男生洗澡很久不出来会在干什么呢？</text>
+	</view>
+	<text class="buttonPart">
+	<text class="praise" bindtap="juamToDetail" id="{{item.id}}">2020-08-14 13:15</text>
+	</text>
+</view>
+
+
+<!-- 填充数据 -->
+<view class="frameWork" wx:for="{{browArray2}}" wx:if="{{tapID == 0}}">
+	<view class="articleTitle">
+		<image class="headerImage" bindtap="juamToDetail" src="/image/article2.png" id="{{item.id}}"></image>
+		<text class="titleName" bindtap="juamToDetail" id="{{item.id}}">{{item.question_title}}</text>
+	</view>
+	<text class="articleDetecle" bindtap="juamToDetail" id="{{item.id}}">{{item.abstract}}</text>
+	<view class="buttonPart">
+		<text class="praise" bindtap="juamToDetail" id="{{item.id}}">{{item.modify_time}}</text>
+		<image src="/image/shanchu.png" class="shanchuImage" bindtap="shanchu" id="{{item.id}}"></image>
+	</view>
+</view>
+
+
+<view class="frameWork" wx:for="{{browArray2}}" wx:if="{{tapID == 1}}">
+	<view class="articleTitle">
+		<image class="headerImage" bindtap="juamToDetail" src="/image/article2.png" id="{{item.id}}"></image>
+		<text class="titleName" bindtap="juamToDetail" id="{{item.id}}">{{item.name}}</text>
+	</view>
+	<view class="buttonPart">
+		<text class="praise" bindtap="juamToDetail" id="{{item.id}}">{{item.modify_time}}</text>
+		<image src="/image/shanchu.png" class="shanchuImage" bindtap="shanchu" id="{{item.id}}"></image>
+	</view>
+</view>
+
+
+<view wx:if="{{hasInfo == true}}" class="buttonText">没有更多数据</view>
+<view wx:if="{{hasInfo == false}}" class="buttonText2">没有草稿</view>

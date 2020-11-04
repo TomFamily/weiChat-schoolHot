@@ -1,0 +1,829 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.0",
+	"appid": "wx35df04e950c9cad8",
+	"projectname": "%E5%AF%BC%E8%88%AA%E6%A0%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/wode/attention/attention",
+					"pathName": "pages/wode/attention/attention",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/attention/attention",
+					"pathName": "pages/wode/attention/attention",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/collect/collect",
+					"pathName": "pages/wode/collect/collect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/brow/brow",
+					"pathName": "pages/wode/brow/brow",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/attention/attention",
+					"pathName": "pages/wode/attention/attention",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/bean/bean",
+					"pathName": "pages/wode/secondPart/bean/bean",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/user/rich-text",
+					"pathName": "pages/wode/secondPart/user/rich-text",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/answer/answer",
+					"pathName": "pages/wode/secondPart/answer/answer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/pInfo/pInfo",
+					"pathName": "pages/wode/secondPart/pInfo/pInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/pInfo/pInfo",
+					"pathName": "pages/wode/secondPart/pInfo/pInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fabu/fabu",
+					"pathName": "pages/fabu/fabu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/index",
+					"pathName": "pages/weitoutiao/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/detail",
+					"pathName": "pages/index/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/index",
+					"pathName": "pages/weitoutiao/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/zan/zan",
+					"pathName": "pages/weitoutiao/zan/zan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/xiTong/xiTong",
+					"pathName": "pages/weitoutiao/xiTong/xiTong",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/detail",
+					"pathName": "pages/index/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail/tuijanDetail",
+					"pathName": "pages/index/tuijanDetail/tuijanDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail2/tuijanDetail2",
+					"pathName": "pages/index/tuijanDetail2/tuijanDetail2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail3/pinglun/pinglun",
+					"pathName": "pages/index/tuijanDetail3/pinglun/pinglun",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail3/pinglun/huifu/huifu",
+					"pathName": "pages/index/tuijanDetail3/pinglun/huifu/huifu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/rebanDetail/rebanDetail",
+					"pathName": "pages/index/rebanDetail/rebanDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/pInfo/pInfo",
+					"pathName": "pages/wode/secondPart/pInfo/pInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/search/search",
+					"pathName": "pages/index/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/search/content/content",
+					"pathName": "pages/index/search/content/content",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/pInfo/pInfo",
+					"pathName": "pages/wode/secondPart/pInfo/pInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/pInfo/pInfo",
+					"pathName": "pages/wode/secondPart/pInfo/pInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/attention/attention",
+					"pathName": "pages/wode/attention/attention",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/collect/collect",
+					"pathName": "pages/wode/collect/collect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/bean/bean",
+					"pathName": "pages/wode/secondPart/bean/bean",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/bean/bean",
+					"pathName": "pages/wode/secondPart/bean/bean",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/index",
+					"pathName": "pages/weitoutiao/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fabu/fabu",
+					"pathName": "pages/fabu/fabu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fabu/editor/rich-text",
+					"pathName": "pages/fabu/editor/rich-text",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fabu/editor/rich-text",
+					"pathName": "pages/fabu/editor/rich-text",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/collect/collect",
+					"pathName": "pages/wode/collect/collect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/attention/attention",
+					"pathName": "pages/wode/attention/attention",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/brow/brow",
+					"pathName": "pages/wode/brow/brow",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/collect/collect",
+					"pathName": "pages/wode/collect/collect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/brow/brow",
+					"pathName": "pages/wode/brow/brow",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/tieZi/problem",
+					"pathName": "pages/wode/secondPart/tieZi/problem",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/bean/bean",
+					"pathName": "pages/wode/secondPart/bean/bean",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/user/rich-text",
+					"pathName": "pages/wode/secondPart/user/rich-text",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/index",
+					"pathName": "pages/weitoutiao/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fabu/think/rich-text",
+					"pathName": "pages/fabu/think/rich-text",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fabu/editor/rich-text",
+					"pathName": "pages/fabu/editor/rich-text",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/detail",
+					"pathName": "pages/index/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail/tuijanDetail",
+					"pathName": "pages/index/tuijanDetail/tuijanDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/detail",
+					"pathName": "pages/index/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/duanping/huifu",
+					"pathName": "pages/index/detail/duanping/huifu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/detail",
+					"pathName": "pages/index/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/taolun/huifu",
+					"pathName": "pages/index/detail/taolun/huifu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/taolun/huifu/huifu",
+					"pathName": "pages/index/detail/taolun/huifu/huifu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/zan/zan",
+					"pathName": "pages/weitoutiao/zan/zan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail/tuijanDetail",
+					"pathName": "pages/index/tuijanDetail/tuijanDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail3/pinglun/pinglun",
+					"pathName": "pages/index/tuijanDetail3/pinglun/pinglun",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/rebanDetail/huifu/pinglun/pinglun",
+					"pathName": "pages/index/rebanDetail/huifu/pinglun/pinglun",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/index",
+					"pathName": "pages/weitoutiao/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/answer/answer",
+					"pathName": "pages/wode/secondPart/answer/answer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/pInfo/pInfo",
+					"pathName": "pages/wode/secondPart/pInfo/pInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/renqi/renqi",
+					"pathName": "pages/wode/secondPart/renqi/renqi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/chat/yk2",
+					"pathName": "pages/weitoutiao/chat/yk2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/chat/yk2",
+					"pathName": "pages/weitoutiao/chat/yk2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/pInfo/pInfo",
+					"pathName": "pages/wode/secondPart/pInfo/pInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/pInfo/pInfo",
+					"pathName": "pages/wode/secondPart/pInfo/pInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/search/search",
+					"pathName": "pages/index/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/pInfo/pInfo",
+					"pathName": "pages/wode/secondPart/pInfo/pInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/index",
+					"pathName": "pages/weitoutiao/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/zan/zan",
+					"pathName": "pages/weitoutiao/zan/zan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/index",
+					"pathName": "pages/weitoutiao/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/weitoutiao/chat/yk2",
+					"pathName": "pages/weitoutiao/chat/yk2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/search/search",
+					"pathName": "pages/index/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail2/tuijanDetail2",
+					"pathName": "pages/index/tuijanDetail2/tuijanDetail2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail2/tuijanDetail2",
+					"pathName": "pages/index/tuijanDetail2/tuijanDetail2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail3/pinglun/pinglun",
+					"pathName": "pages/index/tuijanDetail3/pinglun/pinglun",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/detail",
+					"pathName": "pages/index/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/taolun/huifu/huifu",
+					"pathName": "pages/index/detail/taolun/huifu/huifu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/detail",
+					"pathName": "pages/index/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/index",
+					"pathName": "pages/wode/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/detail",
+					"pathName": "pages/index/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail3/pinglun/huifu/huifu",
+					"pathName": "pages/index/tuijanDetail3/pinglun/huifu/huifu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail3/pinglun/pinglun",
+					"pathName": "pages/index/tuijanDetail3/pinglun/pinglun",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail3/pinglun/pinglun",
+					"pathName": "pages/index/tuijanDetail3/pinglun/pinglun",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/search/search",
+					"pathName": "pages/index/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fabu/think/rich-text",
+					"pathName": "pages/fabu/think/rich-text",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/search/search",
+					"pathName": "pages/index/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/tieZi/problem",
+					"pathName": "pages/wode/secondPart/tieZi/problem",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/tieZi/problem",
+					"pathName": "pages/wode/secondPart/tieZi/problem",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/box/box",
+					"pathName": "pages/wode/secondPart/box/box",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/attention/attention",
+					"pathName": "pages/wode/attention/attention",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fabu/comment/rich-text",
+					"pathName": "pages/fabu/comment/rich-text",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/duanping/huifu",
+					"pathName": "pages/index/detail/duanping/huifu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wode/secondPart/box/box",
+					"pathName": "pages/wode/secondPart/box/box",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/tuijanDetail3/tuijanDetail3",
+					"pathName": "pages/index/tuijanDetail3/tuijanDetail3",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/detail/taolun/huifu",
+					"pathName": "pages/index/detail/taolun/huifu",
+					"scene": null
+				}
+			]
+		}
+	}
+}

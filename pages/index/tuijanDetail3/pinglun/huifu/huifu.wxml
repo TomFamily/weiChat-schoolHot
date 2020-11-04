@@ -1,0 +1,76 @@
+<view class="item row item2">
+	<image src="../../../../../image/yk.png" class="userPicture"></image>
+	<view class="column text2">
+		<text class="userName">Mike</text>
+		<text class="text3">表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。</text>
+		<view class="row">
+			<text class="text4 ">发表时间</text>
+		</view>
+	</view>
+</view>
+<view class="text1">95 条回复</view>
+
+<view class="item row" wx:for="{{3}}">
+	<image src="../../../../../image/yk.png" class="userPicture"></image>
+	<view class="column text2">
+
+		<view class="row">
+			<text class="userName">Mike</text>
+			<image src="../../../../../image/sanJiaoXin.png" class="sanJiaonXin ykMargin"></image>
+			<text class="userName ykMargin">书虫大王</text>
+		</view>
+
+		<text class="text3">表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。</text>
+		<view class="row">
+			<text class="text4 ">发布时间</text>
+			<text class="text5 ykB">点赞数</text>
+			<image class="ykdImage c" src="../../../../../image/dianzan1.png"></image>
+			<image class="sanJiaonXin2 ykMargin" src="../../../../../image/xiaoxi2.png" bindtap="writePinLun2"></image>
+		</view>
+	</view>
+</view>
+<text class="buttonText2">没有更多评论</text>
+
+<view class="functionCalss row" bindtap="writeHuifu">
+	<image src="../../../../../image/xiaolian.png" class="image1"></image>
+	<text class="text5">写回复</text>
+	<text class="text6">发布</text>
+</view>
+
+
+
+<!-- 数据填写 -->
+<view class="text1">精选回复</view>
+<view class="item row" wx:for="{{huifuList}}">
+	<!-- 用户信息 -->
+	<image src="{{item.user_head_portrait}}" class="userPicture" id="{{item.user}}" bindtap="jumpToUser"></image>
+	<view class="column text2">
+
+		<view class="row">
+			<text class="userName">{{item.user_nick_name}}</text>
+			<image src="../../../../../image/sanJiaoXin.png" class="sanJiaonXin ykMargin"></image>
+			<!-- 对目标用户进行回复 -->
+			<text class="userName ykMargin" user="{{item.user}}" id="{{item.id}}">{{item.target_user_nick_name}}</text>
+			<image wx:if="{item.is_author == 1}}" src="../../../../../image/sanPoint.png" id="{{item.id}}" class="delete" bindtap="delete"></image>
+		</view>
+
+
+		<text class="text3">{{item.content}}</text>
+		<view class="row">
+			<text class="text4 ">{{item.add_time}}</text>
+			<text class="text5 ykB">{{item.approval_number}}</text>
+			<!-- 赞同图标 -->
+			<image wx:if="{{item.is_approval == 0 }}" class="dImage c" src="../../../../../image/dianzan1.png" id="{{item.id}}" bindtap="dianzan"></image>
+			<image wx:else class="ykdImage c" src="../../../../../image/dianzan2.png" id="{{item.id}}" bindtap="dianzan"></image>
+
+			<image class="sanJiaonXin2 ykMargin" src="../../../../../image/xiaoxi2.png" bindtap="writePinLun2" id="{{item.target_user}}"></image>
+		</view>
+	</view>
+</view>
+<text class="buttonText2">没有更多评论</text>
+
+<view class="functionCalss row" bindtap="writeHuifu">
+	<image src="../../../../../image/xiaolian.png" class="image1"></image>
+	<text class="text5">写回复</text>
+	<text class="text6">发布</text>
+</view>

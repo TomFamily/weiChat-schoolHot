@@ -1,0 +1,44 @@
+<!--pages/weitoutiao/index.wxml-->
+
+<!-- 谁评论/赞了你的文章  谁回答了问题(你浏览过的文章)  系统信息 私信-->
+
+
+<view class="ykMessage">
+
+	<view class="row margin mar" bindtap="navigateToZan">
+		<view class="ba headImage2">
+			<image src="../../image/info.png" class="headImage3"> </image>
+		</view>
+		<!-- (用户发表或关注的文章) -->
+		<view class="text">赞和评论</view>
+		<view class="empty"></view>
+		<view>
+			<image class="arrow" src='/image/right_icon.png'></image>
+		</view>
+	</view>
+
+	<view class="row margin" bindtap="navigateToSixin">
+		<view class="bb headImage2">
+			<image src="../../image/info2.png" class="headImage3"> </image>
+		</view>
+		<view class="text">私信</view>
+		<view class="empty2"></view>
+		<view>
+			<image class="arrow" src='/image/right_icon.png'></image>
+		</view>
+	</view>
+
+	<view class="row margin" bindtap="navigateToXitong">
+		<view class="bc headImage2">
+			<image src="../../image/info3.png" class="headImage3"> </image>
+		</view>
+		<view class="text">系统消息</view>
+		<view class="empty"></view>
+		<view>
+			<image class="arrow" src='/image/right_icon.png'></image>
+		</view>
+	</view>
+
+</view>
+
+<!-- <text>赞和评论主要是对问题的回答的通知 私信 消息通知</text> -->

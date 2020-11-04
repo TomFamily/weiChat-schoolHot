@@ -1,0 +1,35 @@
+<!--pages/wode/brow/brow.wxml-->
+
+<view class="frameWork" wx:for="{{browArray}}">
+	<view class="articleTitle">
+		<image class="headerImage" bindtap="juamToDetail" src="/image/article2.png" id="{{item.id}}"></image>
+		<text class="titleName" bindtap="juamToDetail" id="{{item.id}}">男生洗澡很久不出来会在干什么呢？</text>
+	</view>
+	<text class="articleDetecle" bindtap="juamToDetail" id="{{item.id}}">配日文平日我王UR欧文如我我如我任务row 荣威如我让让我如我外人无偶然无偶然培荣平稳日沃日我怕四人位人品我怕肉平稳日我怕日我让外婆人思威牌日我怕
+  </text>
+	<text class="buttonPart">
+    <text class="praise" bindtap="juamToDetail" id="{{item.id}}">1000赞同</text>
+	<text class="praise" bindtap="juamToDetail" id="{{item.id}}">888评论</text>
+	<text class="praise" bindtap="juamToDetail" id="{{item.id}}">书虫大王</text>
+	</text>
+</view>
+
+<!-- 填充数据 -->
+<view class="frameWork" wx:for="{{browArray2}}">
+	<view class="articleTitle">
+		<image class="headerImage" src="/image/article2.png" bindtap="juamToDetail" id="{{item.id}}"></image>
+		<text class="titleName" bindtap="juamToDetail" id="{{item.id}}">{{item.question_title}}</text>
+	</view>
+	<text class="articleDetecle" bindtap="juamToDetail" id="{{item.id}}">{{item.user_nick_name}}: {{item.abstract}}</text>
+	<view class="buttonPart">
+		<view class="frame1111">
+			<text class="praise" bindtap="juamToDetail" id="{{item.id}}">{{item.approval_number}}赞</text>
+			<text class="praise" bindtap="juamToDetail" id="{{item.id}}">{{item.comment_number}}评论</text>
+		</view>
+		<image src="/image/shanchu.png" class="shanchuImage" bindtap="shanchu" id="{{item.id}}"></image>
+		<!-- <text class="praise" bindtap="juamToDetail" id="{{item.id}}">{{item.user_nick_name}}</text> -->
+	</view>
+</view>
+
+<view wx:if="{{hasInfo == true}}" class="buttonText">没有更多内容</view>
+<view wx:if="{{hasInfo == false}}" class="buttonText2">没有浏览记录</view>

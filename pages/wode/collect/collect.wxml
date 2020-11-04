@@ -1,0 +1,118 @@
+<!--pages/wode/collect/collect.wxml-->
+<view class="row text3">
+	<view class="header-title {{item.id == tapID? 'header-title-active':''}}" data-id='{{item.id}}' wx:for="{{sLIst}}" bindtap='headerTitleClick'>{{item.name}}</view>
+</view>
+
+<!-- 话题 -->
+<view class="frameWork" wx:for="{{collectArray}}" wx:if="{{tapID ==0}}">
+	<view wx:if="{{item.type == 0}}">
+		<view class="column">
+			<text class="title" bindtap="juamToDetail" id="{{item.id}}">男生洗澡很久不出来会在干什么呢？</text>
+		</view>
+		<text class="buttonPart">
+    <text class="praise">回答量</text>
+		<text class="praise">收藏量</text>
+		</text>
+	</view>
+</view>
+
+
+<!-- 回答 -->
+<view class="frameWork" wx:for="{{collectArray}}" wx:if="{{tapID ==1}}">
+	<view wx:if="{{item.type == 1}}">
+		<view class="userInfo">
+			<image class="headerImage" src="../../../image/yk.png" bindtap="juamToDetail" id="{{item.id}}"></image>
+			<text class="headerName" bindtap="juamToDetail" id="{{item.id}}">书虫大王</text>
+		</view>
+		<view class="column">
+			<text class="title" bindtap="juamToDetail" id="{{item.id}}">男生洗澡很久不出来会在干什么呢？</text>
+			<text class="articleDetecle" bindtap="juamToDetail" id="{{item.id}}">配日文平日我王UR欧文如我我如我任务row 荣威如我让让我如我外人无偶然无偶然培荣平稳日沃日我怕四人位人品我怕肉平稳日我怕日我让外婆人思威牌日我怕</text>
+		</view>
+		<text class="buttonPart">
+    <text class="praise">1000赞同</text>
+		<text class="praise">888评论</text>
+		</text>
+	</view>
+</view>
+
+
+<!-- 美食 -->
+<view class="frameWork" wx:for="{{collectArray}}" wx:if="{{tapID ==2}}">
+	<view class='item3' wx:if="{{item.type == 2}}">
+		<view class="page2">
+			<view class="page">
+				<view class="column">
+					<view class='meiShiTitle' id="{{item.id}}" bindtap="juamToDetail2">青椒肉食</view>
+					<text class="desc">和我日外婆人外婆日我认为破我</text>
+				</view>
+				<view class='bottom3'>
+					<view class='bottom-name' id="{{item.id}}" bindtap="juamToDetail2">评分以及发表时间</view>
+				</view>
+			</view>
+			<view class='imgs'>
+				<image src='http://img1.3lian.com/2015/w7/85/d/101.jpg' id="{{item.id}}" bindtap="juamToDetail2" class='newImage'></image>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+
+<!-- 数据填写 -->
+<!-- 话题 -->
+<view class="frameWork" wx:for="{{collectArray2}}" wx:if="{{tapID ==0}}">
+	<!-- <view wx:if="{{item.type == 0}}"> -->
+	<view class="column">
+		<text class="title" bindtap="juamToDetail" id="{{item.id}}">{{item.title}}</text>
+	</view>
+	<text class="buttonPart">
+    <text class="praise" bindtap="juamToDetail" id="{{item.id}}">{{item.answer_number}}回复</text>
+	<text class="praise" bindtap="juamToDetail" id="{{item.id}}">{{item.attention_number}}收藏</text>
+	</text>
+	<!-- </view> -->
+</view>
+
+
+<!-- 回答 -->
+<view class="frameWork" wx:for="{{collectArray2}}" wx:if="{{tapID ==1}}">
+	<!-- <view wx:if="{{item.type == 1}}"> -->
+	<view class="userInfo">
+
+		<image class="headerImage" src="{{item.user_head_portrait}}" bindtap="juamToDetail3" id="{{item.id}}"></image>
+		<text class="headerName" bindtap="juamToDetail3" id="{{item.id}}">{{item.user_nick_name}}</text>
+	</view>
+	<view class="column">
+		<text class="title" bindtap="juamToDetail3" id="{{item.id}}">{{item.question_title}}</text>
+		<text class="articleDetecle" bindtap="juamToDetail3" id="{{item.id}}">{{item.abstract}}</text>
+	</view>
+	<text class="buttonPart">
+    <text class="praise" bindtap="juamToDetail3" id="{{item.id}}">{{item.approval_number}}赞</text>
+	<text class="praise" bindtap="juamToDetail3" id="{{item.id}}">{{item.comment_number}}评论</text>
+	</text>
+	<!-- </view> -->
+</view>
+
+
+<!-- 美食 -->
+<view class="frameWork" wx:for="{{collectArray2}}" wx:if="{{tapID ==2}}">
+	<!-- <view class='item3' wx:if="{{item.type == 2}}"> -->
+	<view class="page2">
+		<view class="page">
+			<view class='meiShiTitle' id="{{item.id}}" bindtap="juamToDetail2">{{item.name}}</view>
+			<text class="desc" id="{{item.id}}" bindtap="juamToDetail2">{{item.desc}}</text>
+			<view class='bottom3'>
+				<view class='bottom-name' wx:if="{{item.score == null}}" id="{{item.id}}" bindtap="juamToDetail2">暂无评分</view>
+				<view class='bottom-name' wx:else id="{{item.id}}" bindtap="juamToDetail2">{{item.score}}</view>
+			</view>
+		</view>
+		<view class='imgs'>
+			<image src='{{item.image_first}}' id="{{item.id}}" bindtap="juamToDetail2" class='newImage'></image>
+		</view>
+	</view>
+	<!-- </view> -->
+</view>
+
+
+
+<view class="buttonText">没有更多内容</view>

@@ -1,0 +1,64 @@
+<!--  键盘弹出页面上移的问题 -->
+<form bindsubmit="formSubmit">
+
+	<view class="ykBorder">
+		<input wx:if="{{isBox}}" value="{{title}}" class="textarea" confirm-type="next" name placeholder="美食名称" bindtap="keyHeight" bindinput="ykInput"></input>
+		<input wx:else class="textarea" confirm-type="next" name placeholder="美食名称" bindtap="keyHeight" bindinput="ykInput"></input>
+	</view>
+
+
+	<view class="editor" style="height:{{readOnly?'100%':'25vh'}}">
+		<editor id="editor" adjust-position='false' placeholder="介绍一下你的美食吧" showImgSize showImgToolbar showImgResize bindstatuschange="onStatusChange" bindready="onEditorReady" read-only="{{readOnly}}">
+		</editor>
+	</view>
+	<view class="column">
+		<text class="tip">添加美食图片(至少添加三张)</text>
+		<view class="row">
+			<image wx:if="{{image1 == true}}" class="border" src='{{firstImage}}' bindtap="insert_img2" id="1"></image>
+			<image class="border" wx:else src="../../../image/add-line.png" bindtap="insert_img2" id="1"></image>
+
+			<image wx:if="{{image2 == true}}" class="border" src='{{secondImage}}' bindtap="insert_img2" id="2"></image>
+			<image class="border" wx:else src="../../../image/add-line.png" bindtap="insert_img2" id="2"></image>
+
+			<image wx:if="{{image3 == true}}" class="border" src='{{thirdImage}}' bindtap="insert_img2" id="3"></image>
+			<text class="borderText" wx:else  bindtap="insert_img2" id="3">美食店铺照片</text>
+
+			<image wx:if="{{image4 == true}}" class="border" src='{{forthImage}}' bindtap="insert_img2" id="4"></image>
+			<image class="border" wx:else src="../../../image/add-line.png" bindtap="insert_img2" id="4"></image>
+		</view>
+		<view class="row">
+			<image wx:if="{{image5 == true}}" class="border" src='{{firImage}}' bindtap="insert_img2" id="5"></image>
+			<image class="border" wx:else src="../../../image/add-line.png" bindtap="insert_img2" id="5"></image>
+
+			<image wx:if="{{image6 == true}}" class="border" src='{{sixImage}}' bindtap="insert_img2" id="6"></image>
+			<image class="border" wx:else src="../../../image/add-line.png" bindtap="insert_img2" id="6"></image>
+		</view>
+
+		<view class="row mieshi">
+			<text class="tip">美食地址：</text>
+			<text class="tip" bindtap="ykaddress">{{address1}}</text>
+		</view>
+
+		<view class="row mieshi">
+			<text class="tip">美食所属学校：</text>
+			<text class="tip" bindtap="chooseSchool">{{schoolName}}</text>
+		</view>
+
+		<view class="row mieshi">
+			<text class="tip" bindtap="chooseTaste">美食口味：</text>
+			<view wx:if="{{tasteArray}}">
+				<text class="tip">{{item.name}}</text>
+			</view>
+		</view>
+
+		<view class="row mieshi">
+			<text class="tip" bindtap="save">保存草稿稍后发布？</text>
+		</view>
+
+		<!-- 发布按键 -->
+		<view class="ykButton">
+			<button type="primary" formType="submit">{{button_text}}</button>
+		</view>
+
+	</view>
+</form>

@@ -1,0 +1,158 @@
+/* pages/wode/collect/collect.wxss */
+page{
+  background-color:#F5F5F5;
+}
+.frameWork{
+  /* margin-top: 5rpx; */
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid rgb(235, 229, 229);
+  background-color: #ffffff;
+}
+.desc{
+  /* background-color: aqua; */
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  /* width: ; */
+  width: 55vw;
+}
+.userInfo{
+  margin-top: 20rpx;
+  margin-left: 3vw;
+  display: flex;
+  flex-direction: row;
+}
+.headerImage{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.headerName{
+  margin-left: 10rpx;
+  font-size: 29rpx;
+  font-weight: 250;
+}
+.title{
+  margin-top: 15rpx;
+  margin-left: 3vw;
+  font-size: 35rpx;
+  font-weight: 500;
+}
+.articleDetecle{
+  margin-top: 8rpx;
+  margin-left: 3vw;
+  /* background-color: blanchedalmond; */
+  width: 94vw;
+  font-size: 28rpx;
+  font-weight: 200;
+  margin-right: 25rpx;
+}
+.buttonPart{
+  margin-bottom: 20rpx;
+  /* margin-top: 7rpx; */
+  display: flex;
+  flex-direction: row;
+}
+.praise{
+  font-size: 25rpx;
+  color: #ccc;
+  margin-left: 20rpx;
+}
+.buttomTip{
+  margin-top: 25rpx;
+  margin-left: 280rpx;
+  color: rgba(34, 37, 41, 0.2);
+  font-size: 28rpx;
+}
+
+
+.text3{
+  background-color: #fff;
+  /* margin-top:1vw; */
+  color: #ccc;
+  font-size: 28rpx;
+  /* margin-bottom: 20rpx; */
+  border-bottom: 1rpx solid #ccc;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-title {
+  position: relative;
+  display: inline-block;
+  line-height: 80rpx;
+  font-size: 31rpx;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #ccc;
+  display: flex;
+  justify-content: center;  /* 水平居中 */
+  align-items: center;  /* 垂直居中 */
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  height: 40rpx;
+  margin-bottom: 20rpx;
+  margin-top: 15rpx;
+  width: 80rpx;
+  margin-left: 17vw;
+}
+
+.header-title-active {
+  font-size: 33rpx;
+  z-index: 99;
+  color: #a32a2a;
+  /* background-color: rgb(112, 108, 108); */
+  border-radius: 20rpx;
+}
+
+.page2 {
+  display: flex;
+  flex-direction: row;
+}
+.item3 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  background-color: #ffffff;
+}
+.column{
+   display: flex;
+   flex-direction: column;
+}
+.newImage {
+  width: 230rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.imgs {
+  margin-top: 20rpx;
+  width: 500rpx;
+  margin-left: 30rpx;
+  justify-content: center;
+}
+.bottom-name {
+  font-size: 25rpx;
+  color: #ccc;
+}
+.bottom3 {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+}
+.meiShiTitle {
+  /* background-color: chocolate; */
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+  width: 440rpx;
+  /* height: 90rpx; */
+}

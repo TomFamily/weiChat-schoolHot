@@ -1,0 +1,81 @@
+/* pages/weitoutiao/index.wxss */
+
+
+
+
+/* 第二部分 */
+
+.ykMessage{
+  margin-top: 5vw;
+}
+
+.headImage2 {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ba {
+  background-color: 	#FF8040;
+}
+
+.headImage3 {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.bb {
+  background-color: rgb(42, 144, 202);
+}
+
+.bc {
+  background-color: rgb(14, 185, 57);
+}
+
+.arrow {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-top: 37rpx;
+  margin-right: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+}
+
+.text {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  display: flex;
+  flex-direction: row;
+}
+
+.empty{
+  width: 58vw;
+  /* background-color: coral; */
+}
+.empty2{
+  width: 65.2vw;
+  /* background-color: coral; */
+}
+
+.margin {
+  margin-top: 25rpx;
+  margin-left: 4vw;
+}
+.mar{
+  margin-top: 3vw;
+}

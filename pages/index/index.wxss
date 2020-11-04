@@ -1,0 +1,300 @@
+/* 顶部导航条 */
+page {
+  height: 100%;
+  /* background-color: #F5F5F5; */
+}
+
+.index {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.header-panel2 {
+  height: 80rpx;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #a52222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 0.5px 0 0 #ececec;
+  background-color: crimson;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-title {
+  /* margin-left: 5vw; */
+  position: relative;
+  width: 120rpx;
+  height: 80rpx;
+  display: inline-block;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #8a8c8e;
+  /* border-bottom: 2rpx solid rgba(0, 0, 0, 0.2); */
+  text-align: center;
+  font-weight: bold;
+}
+
+.header-title-active {
+  /* border-bottom: 4rpx solid #C34943; */
+  color: #c34943;
+  z-index: 99;
+  font-size: 36rpx;
+}
+
+.nav-blank {
+  height: 11vw;
+  border-bottom: 1rpx solid #ccc;
+  width: 97.5vw;
+  /* background-color: teal; */
+}
+
+/* 页面布局 */
+.page {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rpx;
+}
+.column{
+  flex-direction: column;
+  margin-left: 10rpx;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.page2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.tapClass {
+  /* margin-top: 10vw; */
+  display: flex;
+  flex-direction: row;
+  /* padding-top: 10rpx; */
+  border-bottom: 1rpx silver rgb(34, 32, 32);
+  /* background: aqua; */
+}
+
+.tapItem {
+  display: flex;
+  width: 50px;
+  text-align: right;
+  font-size: 35rpx;
+}
+
+.item {
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.ykText{
+  width: 40rpx;
+  height: 40rpx;
+  /* margin-left: 25vw; */
+  margin-left: 4vw;
+  margin-top: 2.5vw;
+}
+.paixu{
+  color: #ccc;
+  margin-left: 23vw;
+  font-size: 25rpx;
+  margin-top: 3vw;
+  /* background-color: aqua; */
+  width: 15vw;
+}
+
+.icons{
+ 
+  border: 1rpx solid #ccc,
+}
+
+.newsTitle {
+  font-size: 35rpx;
+  font-weight: bold;
+  width: 400rpx;
+}
+
+.imgs {
+  margin-top: 12rpx;
+  width: 500rpx;
+  margin-left: 10rpx;
+  justify-content: center;
+}
+
+.newImage {
+  margin-left: 3vw;
+  width: 160rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+}
+.mBottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.mBottom2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+}
+
+.bottom-name {
+  font-size: 25rpx;
+  color: #ccc;
+}
+.bottom-name2 {
+  font-size: 25rpx;
+}
+
+.bottom-comment {
+  font-size: 25rpx;
+  color: #ccc;
+  margin-left: 20rpx;
+}
+
+
+/* 自己写的  推荐*/
+.tuiJianItem{
+  margin-left: 20rpx;
+  margin-right: 40rpx;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.ykTuijian{
+  margin-top: 20rpx;
+}
+.tuiJianFrame {
+  display: flex;
+  flex-direction: column;
+}
+.tuiJianFrame3{
+  display: flex;
+  flex-direction: column;
+}
+.tuiJianFrame2{
+  display: flex;
+  flex-direction: row;
+}
+.tuiJianTitle{
+  font-weight: bold;
+  /* font-weight: bold; */
+}
+
+.tuiJianUser {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.tuiJianAnswer {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.userPicture {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.tuiJianUser_NickName{
+  font-size: 27rpx;
+  color: rgb(80, 77, 77);
+  margin-left: 20rpx;
+  margin-top: 2rpx;
+}
+.tuiJianContent{
+  font-size: 27rpx;
+  width: 500rpx;
+}
+/* 回答没有图片 */
+.tuiJianContent2{
+  font-size: 27rpx;
+  width: 92vw;
+}
+.tuiJianImage{
+  width: 175rpx;
+  height: 122rpx;
+  border-radius: 10rpx;
+}
+.tuiJianBotton{
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  color: #ccc;
+}
+.tuiJianBotton1{
+  font-size: 25rpx;
+  color: #ccc;
+}
+.tuiJianBotton2{
+  font-size: 25rpx;
+  color: #ccc;
+  margin-left: 20rpx;
+}
+
+
+/* 热榜 */
+.reBangStyleNumber {
+  margin-left: 0rpx;
+  font-weight: bold;
+}
+.paimin1{
+  color: #a52222;
+}
+.paimin2{
+  color: #da7416;
+}
+.paimin3{
+  color: #d1be0f;
+}
+.reBangTitle {
+  margin-left: 10rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+  width: 430rpx;
+}
+.reBangTitle2 {
+  margin-left: 10rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+  width: 80vw;
+  /* background-color: aqua; */
+}
+
+/* 美食 */
+.meiShiTitle {
+  margin-left: 10rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+  width: 390rpx;
+}
+

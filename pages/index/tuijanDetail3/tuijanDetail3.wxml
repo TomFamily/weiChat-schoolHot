@@ -1,0 +1,105 @@
+<import src="../../../components/wxParse/wxParse.wxml" />
+<view class="column">
+	<!-- <view class="b column" bindtap="jumpToQuestion">
+		<text class="questionTitle">问题标题问题标题问题标题</text>
+	</view>
+	<view class="row">
+		<view class="button" bindtap="writeComment">
+			<image class="writeImage" src="../../../image/write.png"></image>
+			<text>写回答</text>
+		</view>
+	</view>
+	<view class="content column">
+		<view class="row">
+			<image class="userPicture" src="../../../image/yk.png"></image>
+			<text class="userName">书虫大王Mike</text>
+		</view>
+		<text class="contentTitle">9月7日，外交部发言人赵立坚主持例行记者会。澎湃新闻（www.thepaper.cn）记者提问，据《纽约时报》、美国有线电视新闻网（CNN）等报道，美国国务院发言人近期发表声明称，中国外交部日前通知美驻华使馆，拒绝为美国媒体驻华记者延期记者证，有关做法是对美方的对等回应。请中方予以证实，中方相关做法是否会导致中美媒体问题进一步升级？
+　　赵立坚表示，美国国务院发言人有关的说法完全不符合事实，是倒打一耙。事实是，包括CNN在内的有关美国媒体记者的记者证延期都在受理过程中。在获发新的记者证之前，有关记者在华采访、报道及生活不会受到任何影响，我们已经正式告诉了美方。
+　　赵立坚指出，一段时间以来，美国不断升级对中国媒体的政治打压，已经到了歇斯底里的程度。2018年以来，美国无限期拖延甚至拒签30名中国记者的签证，将中国驻美媒体注册为“外国代理人”，之后又列为“外国使团”，变相“驱逐”60名中国驻美记者。将中国驻美记者停留期削减至不超过90天，也就是3个月。上述记者的签证于8月6日已经到期，他们早就按要求向美方递交了签证延期申请，但美方迄今还没有给任何一名中方记者延期签证，使中国驻美记者的工作与生活处于极大的不确定之中。美方有关行径严重干扰中国媒体在美开展正常报道活动，严重损害中国媒体声誉，严重干扰两国间正常的人文交流。美方一方面标榜新闻自由，另一方面却歧视性地对待中国媒体，甚至拿中国驻美记者当做人质，向中方施压。这暴露出美方所谓的新闻自由的虚伪性，是赤裸裸的“双重标准”和霸权欺凌。
+　　赵立坚说，即便如此，中方始终表示愿在平等和相互尊重的基础上同美方解决两国媒体记者问题，一直在同美方保持沟通和商谈。为体现诚意，即使在美方无差别将中方驻美记者签证缩减至3个月的情况下，中方仍保持克制，至今未实施相关反制措施，此前一直正常地为美国记者延期签证、为其采访报道提供便利。在美方驱逐中方60多名记者、拒签20多名记者的情况下，中方并没有驱逐同样数量的美方记
+    </text>
+	</view> -->
+
+
+	<view class="functionCalss row">
+		<!-- <text class="dianzanText" id="{{contentData.id}}">{{contentData.approval_number}} 赞</text> -->
+
+		<view class="backgroundWidth">
+			<view class="background row">
+				<image wx:if="{{isDianzan == false}}" src="../../../image/up.png" class="dImage2" id="{{contentData.id}}" bindtap="isApprve"></image>
+				<image wx:if="{{isDianzan == true}}" src="../../../image/up1.png" class="dImage2" id="{{contentData.id}}" bindtap="isApprve"></image>
+
+				<text class="dianzanText" wx:if="{{contentData.approval_number == 0}}" id="{{contentData.id}}">点赞</text>
+				<text class="dianzanText1" wx:else id="{{contentData.id}}">{{approval_number}} 赞</text>
+
+				<view wx:if="{{isDianzan == false}}">
+					<image wx:if="{{isOppose == false}}" src="../../../image/down.png" class="dImage4" id="{{contentData.id}}" bindtap="isOppose"></image>
+					<image wx:if="{{isOppose == true}}" src="../../../image/down1.png" class="dImage4" id="{{contentData.id}}" bindtap="isOppose"></image>
+				</view>
+			</view>
+		</view>
+
+		<view class="column ykframe text2">
+			<image wx:if="{{isLike == false}}" src="../../../image/like.png" class="imageY" id="{{contentData.id}}" bindtap="isLike"></image>
+			<image wx:if="{{isLike == true}}" src="../../../image/like2.png" class="imageY" id="{{contentData.id}}" bindtap="isLike"></image>
+			<text class="text1" id="{{contentData.id}}">喜欢</text>
+		</view>
+		<view class="column ykframe" id="{{contentData.id}}">
+			<image wx:if="{{isShoucang == false}}" src="../../../image/shoucang1.png" class="imageY" id="{{contentData.id}}" bindtap="isCollect"></image>
+			<image wx:if="{{isShoucang == true}}" src="../../../image/shoucang2.png" class="imageY" id="{{contentData.id}}" bindtap="isCollect"></image>
+			<text class="text1" id="{{contentData.id}}" id="{{contentData.id}}" bindtap="isCollect">收藏</text>
+		</view>
+		<view class="column ykframe">
+			<image src="../../../image/xiaoxi2.png" class="imageY" bindtap="jump2" id="{{contentData.id}}"></image>
+			<text class="text1" bindtap="jump2" id="{{contentData.id}}">评论</text>
+		</view>
+	</view>
+
+</view>
+
+<view class="comment2">
+	<image class="commentIMage2" src="../../../image/next.png" bindtap="nextAnswer"></image>
+</view>
+
+
+<!-- 数据填写 -->
+
+<view class="column">
+	<view class="b column">
+		<!-- 添加问题id -->
+		<text bindtap="jumpToQuestion" class="questionTitle" id="{{contentData.question}}">{{contentData.question_title}}</text>
+	</view>
+
+	<!-- <view class="row">
+		<view class="button">
+			<image class="writeImage" src="../../../image/write.png" bindtap="writeComment" id="{{contentData.question}}"></image>
+			<text bindtap="writeComment" id="{{contentData.question}}">写回答</text>
+		</view>
+	</view> -->
+
+	<view class="row">
+		<view class="button" wx:if="{{contentData.has_answer_id == -1}}">
+			<image class="writeImage" src="../../../image/write.png" id="{{contentData.id}}" bindtap="writeComment"></image>
+			<text id="{{contentData.id}}" bindtap="writeComment">写回答</text>
+		</view>
+		<view wx:else class="button" bindtap="checkSelf" id="{{contentData.id}}">查看我的回答</view>
+	</view>
+
+	<view class="content column">
+		<!-- 用户头像名字 -->
+		<view class="row">
+			<image class="userPicture" src="{{contentData.user_head_portrait}}" id="{{contentData.user}}" bindtap="jumpToPeplo"></image>
+			<text class="userName" id="{{contentData.user}}" bindtap="jumpToPeplo">{{contentData.user_nick_name}}</text>
+		</view>
+		<!-- <text class="contentTitle" id="{{contentData.id}}">{{contentData.content}}</text> -->
+
+		<!-- <text >{{answerInfor2}}</text> -->
+		<view class="contentTitle">
+			<template id="{{contentData.id}}" is="wxParse" data="{{wxParseData:newsDetailData.nodes}}" />
+		</view>
+	</view>
+
+
+
+</view>

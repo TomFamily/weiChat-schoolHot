@@ -1,0 +1,211 @@
+<!--pages/index/search/search.wxml-->
+<view class='search'>
+	<view class="row1">
+		<input type='text' confirm-type="search" class="text1" placeholder='输入标题或关键字' bindinput='input' bindconfirm='confirm' />
+		<text class="text2" bindtap="quxiao" wx:if="{{searchSchool == false}}">取消</text>
+	</view>
+</view>
+
+<!-- 标题框 -->
+<view class="row text3" wx:if="{{searchSchool == false}}">
+	<view class="header-title {{item.id == tapID? 'header-title-active':''}}" data-id='{{item.id}}' wx:for="{{sLIst}}" bindtap='headerTitleClick'>{{item.name}}</view>
+</view>
+
+<!-- 热门搜索 -->
+<!-- <view class="list1">
+		<view wx:for="{{list}}" wx:key='' class='lists'>
+			<text wx:if="{{item.show}}">{{item.name}}</text>
+		</view>
+	</view> -->
+
+<!-- </view>
+<text bindtap="jump">跳转</text> -->
+
+
+<!-- 搜索结果布局 -->
+
+<!-- 关注的人 -->
+<!-- <view class="item" wx:for="111">
+	<image class="image1" src="https://hotschool.ltd/6e039e7d9eed88.jpg" bindtap="peopleInfo"></image>
+	<view class="user_info">
+		<text class="view_name">书虫大王</text>
+		<text class="view_desc">你好啊，为荣我日平稳日</text>
+	</view>
+</view> -->
+
+
+<!-- 话题 -->
+<!-- <view class="column" class="frameWork" wx:for="{{3}}">
+	<text class="tuiJianTitle">河南师范大学有望冲双一流嘛？</text>
+	<view class="row">
+		<view class="column">
+			<view class="row" class="bottom">
+				<text class="tuiJianBotton1">浏览量</text>
+				<text class="tuiJianBotton1 mar">回答数</text>
+				<text class="tuiJianBotton1 mar">学校名</text>
+			</view>
+		</view>
+	</view>
+</view> -->
+
+<!-- 美食 -->
+<!-- <view class='item3' wx:for='{{3}}' wx:for-index="idx">
+		<view class="page2" bindtap="newDetail" id="{{item.id}}">
+			<view class="page">
+				<view class='meiShiTitle' id="{{item.id}}">青椒肉食：带给你舌尖上的美味</view>
+				<view class="row" class="bottom">
+					<text class="tuiJianBotton1">评分</text>
+					<text class="tuiJianBotton1 mar">学校名</text>
+				</view>
+			</view>
+			<view class='imgs'>
+				<image src='http://img1.3lian.com/2015/w7/85/d/101.jpg' id="{{item.id}}" class='newImage'></image>
+			</view>
+		</view>
+	</view> -->
+
+<!-- 学校 -->
+<!-- <view class="item school" wx:for="111">
+	<view class="school">
+		<text class="view_name2" text="{{item.highlighted}}" bindtap="chooseSchool">西南大学</text>
+	</view>
+</view> -->
+
+<!-- 口味 -->
+<!-- <view class="ykTop" wx:for="{{4}}">
+	<view class="taste">
+		<text class="view_name3"  bindtap="chooseTaste" id="{{item.object.id}}">你好啊</text>
+	</view>
+	<view class="tasteTian">
+		<text class="tasteTip">添加</text>
+	</view>
+</view> -->
+
+
+
+
+<!-- 搜索数据填写 -->
+
+<!-- 关注的人 -->
+<view class="item" wx:if="{{tapID == 3}}">
+	<!-- <image class="image1" src="{{item.object.head_portrait}}" bindtap="peopleInfo" id="{{item.object.id}}"></image>
+	<view class="user_info">
+
+
+		<text class="view_desc">{{item.object.desc}}</text>
+	</view> -->
+	<view wx:if="{{searchResultDatas.length > 0}}" class="search-content-body">
+		<block wx:for="{{searchResultDatas}}">
+			<view class="row item">
+				<image class="image1" src="{{item.object.head_portrait}}" bindtap="peopleInfo" id="{{item.object.id}}"></image>
+				<view class="column user_info">
+					<view class="search-result-item">
+						<searchHighlightTextView class="result-item" datas='{{searchData[index]}}' data-id='{{item.ganhuo_id}}' bindtap="peopleInfo" id="{{item.object.id}}"/>
+					</view>
+					<text bindtap="peopleInfo" id="{{item.object.id}}">{{item.object.desc}}</text>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+
+
+<!-- 话题 -->
+<view class="column" class="frameWork" wx:if="{{tapID == 1}}">
+
+
+	<!-- <view class="row">
+		<view class="column">
+			<view class="row" class="bottom">
+				<text class="tuiJianBotton1" id="{{item.object.id}}" bindtap="jumpToDetail">浏览量：{{item.object.scan_number}}</text>
+				<text class="tuiJianBotton1 mar" id="{{item.object.id}}" bindtap="jumpToDetail">回答数：{{item.object.answer_number}}</text>
+				<text class="tuiJianBotton1 mar" id="{{item.object.id}}" bindtap="jumpToDetail">{{item.object.school}}</text>
+			</view>
+		</view>
+	</view> -->
+
+	<view wx:if="{{searchResultDatas.length > 0}}">
+		<block wx:for="{{searchResultDatas}}">
+			<view class="tuiJianTitle item column">
+				<searchHighlightTextView class="result-item" datas='{{searchData[index]}}' data-id='{{item.ganhuo_id}}' id="{{item.object.id}}" bindtap="jumpToDetail"/>
+				<view class="row">
+					<view class="column">
+						<view class="row" class="bottom">
+							<text class="tuiJianBotton1" id="{{item.object.id}}" bindtap="jumpToDetail">{{item.object.scan_number}} 浏览</text>
+							<text class="tuiJianBotton1 mar" id="{{item.object.id}}" bindtap="jumpToDetail">{{item.object.answer_number}} 回答</text>
+							<text class="tuiJianBotton1 mar" id="{{item.object.id}}" bindtap="jumpToDetail">{{item.object.school}}</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+
+</view>
+
+<!-- 美食 -->
+<view wx:if="{{tapID == 2}}">
+	<view wx:if="{{searchResultDatas.length > 0}}">
+		<block wx:for="{{searchResultDatas}}">
+
+			<view class="page2 item3">
+				<view class="page">
+
+					<view class="meiShiTitle">
+						<searchHighlightTextView class="result-item" datas='{{searchData[index]}}' data-id='{{item.ganhuo_id}}' id="{{item.object.id}}" bindtap="jumpToMeishi"/>
+					</view>
+
+					<view id="{{item.object.id}}" bindtap="jumpToMeishi" class="content">{{item.object.desc}}</view>
+					<view class="row bottom2">
+						<text class="tuiJianBotton1" id="{{item.object.id}}" bindtap="jumpToMeishi">{{item.object.score }}</text>
+						<text class="tuiJianBotton1 mar" id="{{item.object.id}}" bindtap="jumpToMeishi">{{item.object.school}}</text>
+					</view>
+				</view>
+				<view class='imgs'>
+					<image src='{{item.object.image_first}}' id="{{item.object.id}}" bindtap="jumpToMeishi" class='newImage'></image>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
+
+<!-- 学校 -->
+<view class="item school ykTop" wx:if="{{tapID == 4}}">
+
+	<!-- <view class="school">
+		<text class="view_name2"  bindtap="chooseSchool" id="{{item.object.id}}">{{item.highlighted}}</text>
+	</view> -->
+
+	<view wx:if="{{searchResultDatas.length > 0}}" class="search-content-body">
+		<block wx:for="{{searchResultDatas}}">
+			<view class="item column school">
+				<searchHighlightTextView class="result-item" datas='{{searchData[index]}}' data-id='{{item.ganhuo_id}}' bindtap="chooseSchool" id="{{item.object.id}}"/>
+				<view class="falseStyle"></view>
+			</view>
+		</block>
+	</view>
+
+</view>
+
+<!-- 给美食添加话题 -->
+<view wx:if="{{tapID == 5}}" class="ykTop">
+
+	<!-- <view class="taste">
+		<text class="view_name3" >{{item.highlighted}}</text>
+	</view>
+	<view class="tasteTian">
+		<text class="tasteTip" id="{{item.object.id}}" bindtap="chooseTaste">添加</text>
+	</view> -->
+
+	<view wx:if="{{searchResultDatas.length > 0}}">
+		<block wx:for="{{content}}">
+			<view class="item row">
+				<searchHighlightTextView class="widthStyle" datas='{{searchData[index]}}' data-id='{{item.ganhuo_id}}' />
+
+				<view class="tasteTian">
+					<text class="tasteTip" id="{{item.object.id}}" bindtap="chooseTaste">添加</text>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

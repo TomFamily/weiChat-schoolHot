@@ -1,0 +1,87 @@
+/* pages/wode/attention/attention.wxss */
+page{
+  background-color:#F5F5F5;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid rgb(235, 229, 229);
+  background-color: #ffffff;
+}
+.image1{
+  margin-top: 2vw;
+  margin-left: 30rpx;
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50%;
+}
+.image2{
+  margin-top: 3vw;
+  width: 110rpx;
+  height: 55rpx;
+  border-radius: 2vw;
+  margin-left: 40rpx;
+  background-color: #9c9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.user_info{
+  margin-top: 2vw;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.view_name{
+  margin-top: 5rpx;
+  font-weight:700;
+}
+.view_desc{
+  margin-top: 10rpx;
+  font-size: 25rpx;
+  font-weight: 300;
+  width: 55vw;
+}
+
+.buttomTip{
+  margin-top: 25rpx;
+  margin-left: 280rpx;
+  color: rgba(34, 37, 41, 0.2);
+  font-size: 28rpx;
+}
+.text3{
+  background-color: #fff;
+  /* margin-top:1vw; */
+  color: #ccc;
+  font-size: 28rpx;
+  /* margin-bottom: 20rpx; */
+  border-bottom: 1rpx solid #ccc;
+}
+.header-title {
+  position: relative;
+  display: inline-block;
+  line-height: 80rpx;
+  font-size: 31rpx;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #ccc;
+  display: flex;
+  justify-content: center;  /* 水平居中 */
+  align-items: center;  /* 垂直居中 */
+  font-size: 28rpx;
+  height: 40rpx;
+  margin-bottom: 20rpx;
+  margin-top: 15rpx;
+  width: 80rpx;
+  margin-left: 27vw;
+}
+
+.header-title-active {
+  font-size: 33rpx;
+  z-index: 99;
+  color: #a32a2a;
+  /* background-color: rgb(112, 108, 108); */
+  border-radius: 20rpx;
+}

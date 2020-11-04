@@ -1,0 +1,181 @@
+/* components/rt/rt.wxss */
+page {
+  height: 100%;
+}
+
+text {
+  display: block;
+  float: left;
+}
+
+view {
+  float: left;
+}
+
+.ykButton {
+  justify-content:center;
+}
+
+.border {
+  border-bottom: 1rpx solid #ccc;
+}
+
+.editor {
+  float: left;
+  width: 750rpx;
+  height: 1200rpx;
+  background-color: white;
+  margin-top: 10rpx;
+  border-bottom: 1rpx solid #ccc;
+  margin-bottom: 10rpx;
+}
+
+.editor editor {
+  float: left;
+  width: 100%;
+  padding: 25rpx;
+  height: 100%;
+}
+
+/* 分割线 */
+.ykBorder{
+  border-bottom: 1rpx solid #ccc;
+  margin-left: 3vw;
+  width: 94vw;
+  margin-top: 2vw;
+  /* background-color: rgb(179, 88, 88); */
+  height: 15vw;
+}
+.textarea{
+  margin-left: 3vw;
+  font-size: large;
+  font-style: oblique;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+  margin-top: 4vw;
+}
+
+.ykBarStyle{
+  margin-top:25rpx;
+  margin-left: 20rpx;
+}
+
+.functionCalss {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 75rpx;
+}
+
+.function {
+  height: 20rpx;
+  width: 750rpx;
+  /* margin-top: 0rpx; */
+  margin-bottom: 0rpx;
+  margin-left: 0rpx;
+}
+
+.function1 {
+  width: 720rpx;
+  background-color: white;
+  padding-right: 30rpx;
+}
+
+.function1 text {
+  line-height: 70rpx;
+  width: 130rpx;
+  letter-spacing: 10rpx;
+  text-align: center;
+  font-weight: 500;
+  padding-left: 10rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  margin: 10rpx 5rpx 0 5rpx;
+}
+
+.f1st {
+  background-color: white;
+}
+
+.function1 image {
+  width: 30rpx;
+  height: 30rpx;
+  padding: 15rpx;
+  float: right;
+  margin: 15rpx 5rpx 0 5rpx;
+  background-color: white;
+  border-radius: 10rpx;
+}
+
+.function1 image:active {
+  background-color: #e6e6e6;
+}
+
+.function2 {
+  width: 500rpx;
+  height: 50rpx;
+  padding: 15rpx 5rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.function2 view {
+  height: 80rpx;
+  width: 80rpx;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7rpx;
+  margin-bottom: 0rpx;
+}
+
+.f2st {
+  background-color: #f1f1f1;
+}
+
+.function2 view:active {
+  background-color: #e6e6e6;
+}
+
+.function2 view image {
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+.function2 view text {
+  width: 100%;
+  text-align: center;
+  font-size: 23rpx;
+}
+
+.buttonCalss{
+  margin-left: 220rpx;
+}
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+}
+
+.mieshi {
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+}
+.tip2 {
+  color: #ccc;
+  margin-left: 2vw;
+  width: 50vw;
+}
+.tip {
+  color: #ccc;
+  margin-left: 2vw;
+}
+.tip3 {
+  color: #fff;
+  margin-left: 2vw;
+}

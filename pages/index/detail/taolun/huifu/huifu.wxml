@@ -1,0 +1,80 @@
+<view class="item column">
+	<view class="title">对花木兰的个人看法以及西方影视作品的亚裔种族平权</view>
+	<view class="row">
+		<image src="../../../../../image/yk.png" class="userPicture"></image>
+		<view class="column">
+			<text class="userName2">Mike</text>
+			<text class="userName3">发表时间</text>
+		</view>
+	</view>
+	<text class="content2">表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。</text>
+	<text class="text5 ">获赞数以及图标</text>
+</view>
+
+
+<view class="text1">95 条评论</view>
+
+<view class="item row" wx:for="{{3}}">
+	<image src="../../../../../image/yk.png" class="userPicture"></image>
+	<view class="column text2">
+		<text class="userName">Mike</text>
+		<text class="text3" bindtap="jumpToHuifu">表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。</text>
+		<view class="row">
+			<text class="text4 ">多久发表</text>
+			<text class="text4 b">点赞人数</text>
+			<image class="YdImage" src="../../../../../image/dianzan1.png" bindtap="isDianzan" id="{{item.id}}"></image>
+
+		</view>
+	</view>
+</view>
+
+
+<!-- 数据填充 -->
+
+<view class="item column">
+	<view class="title">{{taolun.title}}</view>
+	<view class="row">
+
+		<image src="{{taolun.user_head_portrait}}" class="userPicture" id="{{taolun.user}}"  bindtap="jumpToPeplo"></image>
+		<view class="column">
+			<text class="userName2" id="{{taolun.user}}"  bindtap="jumpToPeplo">{{taolun.user_nick_name}}</text>
+			<text class="userName3">{{taolun.add_time}}</text>
+		</view>
+	</view>
+	<text class="content2">{{taolun.content}}</text>
+	<view class="row">
+		<text class="text5">{{taolun.approval_number}}赞</text>
+		<image class="YdImage" src="../../../../../image/dianzan1.png" wx:if="{{taolun.is_approval == 0}}" bindtap="isDianzan1" id="{{taolun.id}}"></image>
+		<image class="YdImage" src="../../../../../image/dianzan2.png" wx:else bindtap="isDianzan1" id="{{taolun.id}}"></image>
+	</view>
+</view>
+
+
+<!--评论 -->
+<view class="text1">评论({{taolun.comment_number}})</view>
+
+<view class="item row" wx:for="{{pingLunList}}">
+	<image src="{{item.user_head_portrait}}" class="userPicture"></image>
+	<view class="column text2">
+		<text class="userName">{{item.user_nick_name}}</text>
+		<text class="text3">{{item.content}}</text>
+		<view class="row">
+			<text class="text4 ">{{item.add_time}}</text>
+			<text class="text4 b">{{item.approval_number}}赞</text>
+			<image class="YdImage" src="../../../../../image/dianzan1.png" wx:if="{{item.is_approval == 0 }}" bindtap="isDianzan" id="{{item.id}}"></image>
+			<image class="YdImage" src="../../../../../image/dianzan2.png" wx:else bindtap="isDianzan" id="{{item.id}}"></image>
+
+		</view>
+	</view>
+</view>
+
+
+
+<text class="buttonText">没有更多内容</text>
+<!-- 悬浮按键 -->
+
+<view class="functionCalss row" bindtap="writeHuifu">
+	<image src="../../../../../image/xiaolian.png" class="image1"></image>
+	<text class="text5">写评论</text>
+	<text class="text6">发布</text>
+</view>

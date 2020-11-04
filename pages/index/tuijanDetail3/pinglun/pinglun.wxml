@@ -1,0 +1,45 @@
+<text class="text1">精选评论</text>
+<view class="item row" wx:for="{{huifuList}}">
+	<image src="../../../../image/yk.png" class="userPicture"></image>
+	<view class="column text2">
+		<text class="userName">Mike</text>
+		<text class="text3">表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。</text>
+		<view class="row">
+			<text class="text4 ">发布时间</text>
+			<text class="text4 a" bindtap="jumpToHuifu">查看回复</text>
+			<image class="dImage c b" src="../../../../image/dianzan1.png"></image>
+		</view>
+	</view>
+</view>
+
+<view class="comment" bindtap="writePinglun">
+	<image class="commentIMage" src="../../../../image/read.png"></image>
+</view>
+
+
+
+
+<!-- 数据填写 -->
+
+<text class="text1">精选评论</text>
+
+<view class="item row" wx:for="{{commentData}}">
+<!-- 用户的头像和name -->
+	<image src="{{item.user_head_portrait}}" class="userPicture" id="{{item.user}}" bindtap="jumpToPeplo"></image>
+	<view class="column text2">
+		<text class="userName" id="{{item.user}}" bindtap="jumpToPeplo">{{item.user_nick_name}}</text>
+		<text class="text3">{{item.content}}</text>
+		<view class="row">
+			<text class="text4 ">{{item.add_time}}</text>
+			<text class="text4 a" bindtap="jumpToHuifu" id="{{item.id}}">查看回复</text>
+			
+			<!-- 1表示赞同 -->
+			<image wx:if="{{item.is_approval == 0 }}" class="dImage c b" src="../../../../image/dianzan1.png" bindtap="dianzan" id="{{item.id}}" index="{{item.index}}"></image>
+			<image wx:else class="dImage c b" src="../../../../image/dianzan2.png" bindtap="dianzan" id="{{item.id}}" ></image>
+		</view>
+	</view>
+</view>
+
+<view class="comment" bindtap="writePinglun">
+	<image class="commentIMage" src="../../../../image/read.png"></image>
+</view>

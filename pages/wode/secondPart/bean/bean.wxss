@@ -1,0 +1,41 @@
+/* pages/wode/secondPart/bean/bean.wxss */
+page{
+  background-color: #f5f5f5;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid rgb(235, 229, 229);
+  background-color: #ffffff;
+}
+.image1{
+  margin-left: 30rpx;
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50%;
+  margin-top: 2vw;
+}
+
+.user_info{
+  margin-top: 2vw;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.view_name{
+  margin-top: 5rpx;
+  font-weight:700;
+}
+.view_desc{
+  margin-top: 10rpx;
+  font-size: 25rpx;
+  font-weight: 300;
+}
+
+.buttomTip{
+  margin-top: 25rpx;
+  margin-left: 280rpx;
+  color: rgba(34, 37, 41, 0.2);
+  font-size: 28rpx;
+}

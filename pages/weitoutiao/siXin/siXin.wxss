@@ -1,0 +1,64 @@
+/* pages/weitoutiao/siXin/siXin.wxss */
+
+page {
+  background-color: #f5f5f5;
+}
+.b{
+  background-color: #ffffff;
+}
+.item{
+  border-bottom: 1rpx solid #ccc;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  margin-left: 30rpx;
+  /* height: 188rpx; */
+}
+
+.item_tongZhi{
+  display: flex;
+  flex-direction: column;
+}
+
+.item_tongZhi_praise{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+}
+
+.headImage{
+  
+  margin-top: 20rpx;
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50%;
+}
+.nameStyle{
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+  font-weight: bold;
+  font-size: 25rpx;
+  color: rgb(148, 142, 142);
+}
+.problemHead{
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  width: 430rpx;
+  /* background-color: hotpink; */
+  color: rgb(97, 94, 94);
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.text3{
+  /* margin-left: 50rpx; */
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 25rpx;
+  color: #ccc;
+  /* background-color: aqua; */
+}

@@ -1,0 +1,269 @@
+/* pages/index/new/detail.wxss */
+@import "/components/wxParse/wxParse.wxss";
+
+page {
+  padding: 10px 10px 20px 10px;
+  box-sizing: border-box;
+  background-color:#BE652D;
+  display: flex;
+  flex-direction: column;
+}
+.article-title {
+  margin-bottom: 0.2rem;
+}
+.article-title .title {
+  font-size: 22px !important;
+  line-height: 28px;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+.J-article-content {
+  text-align: justify;
+}
+.article-src-time {
+  font-size: 12px;
+  color: #999;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.img-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  background-color: rgba(150, 150, 150, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: 40%;
+}
+.article-content .txt {
+  word-wrap: break-word;
+  font-size: 18px;
+  color: #333;
+}
+.article-content .section {
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+
+/*自己写的 */
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.image1_type{
+  width: 190rpx;
+  height: 260rpx;
+  margin-left: 15rpx;
+  border-radius: 10rpx;
+}
+.frame2{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.title{
+  font-size: 40rpx;
+  margin-top: 2rpx;
+  /* background-color: #e92828; */
+  width: 40vw;
+}
+.anJian{
+  margin-top: 20rpx;
+  background-color: #ffffff;
+  font-weight: bold;
+  justify-content: center;  /* 水平居中 */
+  align-items: center;  /* 垂直居中 */
+  display: flex;
+  width: 160rpx;
+  height: 55rpx;
+  border-radius: 10rpx;
+}
+.anJian2{
+  margin-left: 20rpx;
+}
+
+.scroll {
+  white-space: nowrap; 
+  width: 100%;
+  margin-top: 12vw;
+  /* margin-left: 5rpx; */
+}
+.bc-red {
+  margin-left: 15rpx;
+  width: 250rpx;
+  height: 350rpx;
+  border-radius: 10rpx;
+}
+.text1{
+  margin-top: 15rpx;
+  font-size: 25rpx;
+  color: #ccc;
+}
+.pingfen{
+  color: #e92828;
+  font-size: 50rpx;
+  font-weight: bold;
+  margin-left: 13vw;
+}
+.jianjie{
+  display: flex;
+  flex-direction: column;
+  margin-right: 15rpx;
+  margin-top: 40rpx;
+  margin-left: 15rpx;
+}
+.jianjie1{
+  margin-right: 15rpx;
+  margin-top: 40rpx;
+  margin-left: 15rpx;
+  color: #fff;
+}
+.jianjieTitle{
+  font-size: 30rpx;
+  color: #ffffff;
+  font-weight: bold;
+}
+.jianjieContent{
+  margin-top: 20rpx;
+  color: #ffffff;
+}
+.duanpin{
+  background-color: #A7480D;
+  border-radius: 15rpx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15rpx;
+  margin-left: 15rpx;
+}
+.taolun{
+  background-color: #ffffff;
+  border-radius: 15rpx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+.duanpinLogo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+  font-weight: bold;
+  height: 80rpx;
+  border-bottom: 1rpx solid #ccc;
+  width: 86.5vw;
+  /* background-color: honeydew; */
+}
+.taolunType{
+  color: #000000;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  
+}
+.userHead{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.userName{
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #ffffff;
+}
+.userNameTaolun{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.plunContent{
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  color: #ffffff;
+}
+.plunContentTaolun{
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+.dianzan{
+  margin-bottom: 20rpx;
+  font-size: 25rpx;
+  color: #ccc;
+}
+.amar{
+  margin-left: 48vw;
+}
+.plunContent2{
+  color: #ffffff;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-bottom: 30rpx;
+}
+.plunContent3{ 
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-bottom: 30rpx;
+}
+.image2{
+  height: 25rpx;
+  width: 25rpx;
+  margin-top: 27rpx;
+  margin-left: 440rpx;
+}
+.image3{
+  height: 25rpx;
+  width: 25rpx;
+  margin-top: 27rpx;
+  margin-left: 460rpx;
+}
+.daohang{
+  margin-left: 60rpx;
+  color: rgb(70, 67, 67);
+  margin-top: 2vw;
+}
+.daoIamge{
+  
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.YdImage{
+  width: 3.5vw;
+  height: 3.5vw;
+  margin-left: 20rpx;
+}
+.record{
+  margin-left: 2vw;
+  margin-top: 2vw;
+  color: #ffffff;
+
+}
+.record2{
+  margin-top: 1vw;
+  font-size: 26rpx;
+  /* background-color: aqua; */
+  width: 92vw;
+}
+.record3{
+  margin-left: 3vw;
+  font-size: 26rpx;
+}
+.record4{
+  font-size: 26rpx;
+}
+
+
+

@@ -1,0 +1,70 @@
+/* pages/wode/brow/brow.wxss */
+page{
+  background-color:#DCDCDC;
+}
+.frameWork{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid rgb(235, 229, 229);
+  background-color: #ffffff;
+}
+.articleTitle{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+.headerImage{
+  width: 38rpx;
+  height: 40rpx;
+  /* border-radius: 8rpx; */
+  margin-top: 6rpx;
+}
+.titleName{
+  margin-left: 10rpx;
+  font-size: 35rpx;
+  font-weight: 400;
+}
+.articleDetecle2{
+  margin-top: 8rpx;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  font-weight: 200;
+  /* margin-right: 25rpx; */
+}
+.articleDetecle{
+  margin-top: 8rpx;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  font-weight: 200;
+  margin-right: 25rpx;
+}
+.buttonPart{
+  margin-bottom: 20rpx;
+  margin-top: 7rpx;
+  display: flex;
+  flex-direction: row;
+}
+.praise{
+  font-size: 25rpx;
+  color: #ccc;
+  margin-left: 20rpx;
+}
+
+.buttomTip{
+  margin-top: 25rpx;
+  margin-left: 280rpx;
+  color: rgba(34, 37, 41, 0.2);
+  font-size: 28rpx;
+}
+
+.shanchuImage{
+  margin-left: 60vw;
+  width: 35rpx;
+  height: 35rpx;
+}
+.frame1111{
+  /* background-color: aqua; */
+  width: 30vw;
+}

@@ -1,0 +1,24 @@
+<!--pages/wode/secondPart/bean/bean.wxml-->
+    
+
+<view class="item" wx:for="{{4}}" bindtap="peopleInfo">
+	<image class="image1" src="/image/yk.png"></image>
+	<view class="user_info">
+		<text class="view_name">书虫大王</text>
+		<text class="view_desc">人品往日物品日文平日聘任</text>
+	</view>
+  <!-- <image class="image2" src="/image/attention.png" bindtap="attentionClickde"></image> -->
+</view>
+
+<!-- 填写参数 -->
+<view class="item" wx:for="{{attentionArray}}">
+	<image class="image1" src="{{item.head_portrait}}" bindtap="peopleInfo" id="{{item.id}}"></image>
+	<view class="user_info">
+		<text class="view_name" bindtap="peopleInfo" id="{{item.id}}">{{item.nick_name}}</text>
+		<text class="view_desc" bindtap="peopleInfo" id="{{item.id}}">{{item.desc}}</text>
+	</view>	
+  <!-- <image class="image2" src="/image/attention.png" bindtap="attentionClickde"></image> -->
+</view>
+
+<view wx:if="{{hasInfo == true}}" class="buttonText">没有更多内容</view>
+<view wx:if="{{hasInfo == false}}" class="buttonText2">暂时还没有粉丝</view>

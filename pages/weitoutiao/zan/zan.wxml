@@ -1,0 +1,86 @@
+<!--pages/weitoutiao/zan/zan.wxml-->
+<view wx:for="{{content}}">
+	<view class="item5" wx:if="{{item.type == 1 || item.type == 3 || item.type == 4 || item.type == 5}}">
+		<image src="../../../image/yk.png" class="headImage" bindtap="jumpToInfo"> </image>
+		<view class="item_tongZhi">
+			<view class="row ">
+				<text class="nameStyle messageA">书虫大王 . {{content[index].string}}</text>
+				<text class="timeStyle">11月11日</text>
+			</view>
+			<text class="problemHead">三十岁，研究生毕业的你，现在收入多少？</text>
+			<view class="item_tongZhi_praise ">
+				<text class="marginYk">写的好啊，我来你那女那你我</text>
+			</view>
+		</view>
+	</view>
+	<view class="item5" wx:if="{{item.type == 2}}">
+		<image src="../../../image/yk.png" class="headImage marB" bindtap="jumpToInfo"> </image>
+		<view class="item_tongZhi">
+			<view class="row ">
+				<text class="nameStyle nameMar messageA">书虫大王 . {{content[index].string}}</text>
+				<text class="timeStyle">11月11日</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+<!-- 数据填写 -->
+<view wx:for="{{message}}">
+	<!-- 渲染1到5类型的数据 -->
+
+	<!-- 对文章的评论和回复 -->
+	<view class="item5" wx:if="{{item.type == 1}}">
+		<image src="{{item.message.user_head_portrait}}" class="headImage" bindtap="jumpToInfo" id="{{item.message.answer}}"> </image>
+		<view class="item_tongZhi">
+			<view class="row ">
+				<text class="nameStyle messageA" bindtap="jumpToInfo" id="{{item.message.answer}}">{{item.message.user_nick_name}} . {{content[index].string}}</text>
+				<text class="timeStyle"  bindtap="jumpToInfo" id="{{item.message.answer}}">{{item.time}}</text>
+			</view>
+			<text class="problemHead" bindtap="jumpToInfo" id="{{item.message.answer}}">{{item.message.question_title}}</text>
+			<view class="item_tongZhi_praise ">
+				<text bindtap="jumpToInfo" id="{{item.message.answer}}">评论内容：{{item.message.content}}</text>
+			</view>
+		</view>
+	</view>
+
+		<view class="item5" wx:if="{{item.type == 3}}">
+		<image src="{{item.message.user_head_portrait}}" class="headImage" bindtap="jumpToInfo" id="{{item.message.answer}}"> </image>
+		<view class="item_tongZhi">
+			<view class="row ">
+				<text class="nameStyle messageA" bindtap="jumpToInfo" id="{{item.message.answer}}">{{item.message.user_nick_name}} . {{content[index].string}}</text>
+				<text class="timeStyle"  bindtap="jumpToInfo" id="{{item.message.answer}}">{{item.time}}</text>
+			</view>
+			<text class="problemHead" bindtap="jumpToInfo" id="{{item.message.answer}}">{{item.message.question_title}}</text>
+			<view class="item_tongZhi_praise ">
+				<text bindtap="jumpToInfo" id="{{item.message.answer}}">回复内容：{{item.message.content}}</text>
+			</view>
+		</view>
+	</view>
+
+	<!-- 对美食的讨论和回复 -->
+	<view class="item5" wx:if="{{item.type == 4 || item.type == 5}}">
+		<image src="{{item.message.user_head_portrait}}" class="headImage" bindtap="jumpToMeishi" id="{{item.message.discuss}}"> </image>
+		<view class="item_tongZhi">
+			<view class="row ">
+				<text class="nameStyle messageA" bindtap="jumpToMeishi" id="{{item.message.discuss}}">{{item.message.user_nick_name}} . {{content[index].string}}</text>
+				<text class="timeStyle" bindtap="jumpToMeishi" id="{{item.message.discuss}}">{{item.time}}</text>
+			</view>
+			<text class="problemHead" bindtap="jumpToMeishi" id="{{item.message.discuss}}">{{item.message.question_title}}</text>
+			<view class="item_tongZhi_praise ">
+				<text bindtap="jumpToMeishi" id="{{item.message.discuss}}">{{item.message.content}}</text>
+			</view>
+		</view>
+	</view>
+
+	<!-- 关注 -->
+	<view class="item5" wx:if="{{item.type == 2}}">
+		<image src="{{item.message.user_head_portrait}}" class="headImage" bindtap="jumpToPerson" id="{{item.message.user}}"> </image>
+		<view class="item_tongZhi">
+			<view class="row ">
+				<text class="nameStyle nameMar messageA" bindtap="jumpToPerson" id="{{item.message.user}}">{{item.message.user_nick_name}} . {{content[index].string}}</text>
+				<text class="timeStyle" bindtap="jumpToPerson" id="{{item.message.user}}">{{item.time}}</text>
+			</view>
+		</view>
+	</view>
+</view>

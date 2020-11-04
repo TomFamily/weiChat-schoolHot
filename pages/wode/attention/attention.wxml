@@ -1,0 +1,44 @@
+<!--pages/wode/attention/attention.wxml-->
+<view class="row text3">
+	<view class="header-title {{item.id == tapID? 'header-title-active':''}}" data-id='{{item.id}}' wx:for="{{sLIst}}" bindtap='headerTitleClick'>{{item.name}}</view>
+</view>
+
+<view class="item" wx:for="{{3}}"  id="{{item.id}}" wx:if="{{tapID == 0}}">
+	<image class="image1" src="/image/yk.png" bindtap="peopleInfo"  id="{{item.id}}"></image>
+	<view class="user_info" bindtap="peopleInfo"  id="{{item.id}}">
+		<text class="view_name" id="{{item.id}}" >书虫大王</text>
+		<text class="view_desc" id="{{item.id}}">人品往日物品日文平日聘任</text>
+	</view>
+	<text class="image2" bindtap="attentionClickde">{{isGuanzhu}}</text>
+</view>
+
+<view class="item" wx:for="{{3}}"  id="{{item.id}}" wx:if="{{tapID == 1}}">
+	<image class="image1" src="/image/yk.png" bindtap="peopleInfo"  id="{{item.id}}"></image>
+	<view class="user_info" bindtap="peopleInfo"  id="{{item.id}}">
+		<text class="view_name" id="{{item.id}}" >书虫大王</text>
+		<text class="view_desc" id="{{item.id}}">人品往日物品日文平日聘任</text>
+	</view>
+</view>
+
+<!-- 填写参数 -->
+<view class="item" wx:for="{{myAttentionPeople2}}" id="{{item.id}}" wx:if="{{tapID == 0}}">
+	<image class="image1" src="{{item.head_portrait}}" bindtap="peopleInfo" id="{{item.id}}"></image>
+	<view class="user_info" id="{{item.id}}">
+		<text class="view_name" id="{{item.id}}" bindtap="peopleInfo">{{item.nick_name}}</text>
+		<text class="view_desc" id="{{item.id}}" bindtap="peopleInfo">{{item.desc}}</text>
+	</view>
+  <text class="image2" bindtap="attentionClickde" id="{{item.id}}">{{isGuanzhu}}</text>
+</view>
+
+
+<view class="item" wx:for="{{myAttentionPeople2}}" id="{{item.id}}" wx:if="{{tapID == 1}}">
+	<image class="image1" src="{{item.head_portrait}}" bindtap="peopleInfo" id="{{item.id}}"></image>
+	<view class="user_info" id="{{item.id}}">
+		<text class="view_name" id="{{item.id}}" bindtap="peopleInfo">{{item.nick_name}}</text>
+		<text class="view_desc" id="{{item.id}}" bindtap="peopleInfo">{{item.desc}}</text>
+	</view>
+</view>
+
+
+<view wx:if="{{hasInfo == true}}" class="buttonText">没有更多内容</view>
+<view wx:if="{{hasInfo == false}}" class="buttonText2">还没有关注的人</view>

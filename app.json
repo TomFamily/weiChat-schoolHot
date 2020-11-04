@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/rebanDetail/rebanDetail",
+    "pages/index/rebanDetail/huifu/huifu",
+
+    "pages/index/search/search",
+    "pages/index/tuijanDetail/tuijanDetail",
+    "pages/index/tuijanDetail2/tuijanDetail2",
+    "pages/index/tuijanDetail3/tuijanDetail3",
+    "pages/index/tuijanDetail3/pinglun/pinglun",
+    "pages/index/tuijanDetail3/pinglun/huifu/huifu",
+    
+    "pages/index/detail/detail",
+    "pages/index/detail/duanping/huifu",
+    "pages/index/detail/taolun/huifu",
+    "pages/index/detail/taolun/huifu/huifu",
+
+    "pages/weitoutiao/index",
+    "pages/weitoutiao/zan/zan",
+    "pages/weitoutiao/chat/yk2",
+    "pages/weitoutiao/siXin/siXin",
+    "pages/weitoutiao/xiTong/xiTong",
+
+    "pages/fabu/think/rich-text",
+    "pages/fabu/editor/rich-text",
+    "pages/fabu/comment/rich-text",
+    "pages/fabu/answer/rich-text",
+    "pages/fabu/fabu",
+
+    "pages/wode/index",
+    "pages/wode/collect/collect",
+    "pages/wode/attention/attention",
+    "pages/wode/brow/brow",
+    "pages/wode/login2/login2",
+    "pages/wode/secondPart/tieZi/problem",
+    "pages/wode/secondPart/answer/answer",
+    "pages/wode/secondPart/bean/bean",
+    "pages/wode/secondPart/renqi/renqi",
+    "pages/wode/secondPart/box/box",
+    "pages/wode/secondPart/pInfo/pInfo"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#2894FF"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "position": "bottom",
+    "color": "#8a8a8a",
+    "selectedColor": "#2894FF",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/image/a1.png",
+        "selectedIconPath": "/image/a2.png"
+      },
+      
+      {
+        "text": "消息",
+        "pagePath": "pages/weitoutiao/index",
+        "iconPath": "/image/a5.png",
+        "selectedIconPath": "/image/a6.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/wode/index",
+        "iconPath": "/image/a7.png",
+        "selectedIconPath": "/image/a8.png"
+      }
+    ]
+  }
+}

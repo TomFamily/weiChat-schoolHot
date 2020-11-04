@@ -1,0 +1,31 @@
+<!--pages/weitoutiao/xiTong/xiTong.wxml-->
+
+<view wx:for="{{3}}" class="b" bindtap="jumpToChat" >
+	<view class="item">
+		<image src="../../../image/fire.png" class="headImage"> </image>
+		<view class="column">
+			<text class="nameStyle">热榜小伙伴</text>
+			<text class="problemHead">欢迎使用校园热搜，我们将一起.....</text>
+		</view>
+		<text class="text2">多久前</text>
+		<view class="item_tongZhi_praise">
+		</view>
+	</view>
+</view>
+
+
+<!-- 数据填写 -->
+<view wx:for="{{message}}" class="b" bindtap="jumpToChat" wx:if="{{item.type == 6}}">
+	<view class="item">
+		<image src="../../../image/fire.png" class="headImage"> </image>
+		<view class="column">
+			<text class="nameStyle">热榜小伙伴</text>
+			<text class="problemHead">{{item.message}}</text>
+		</view>
+		<text class="text2">{{item.time}}</text>
+		<view class="item_tongZhi_praise">
+		</view>
+	</view>
+</view>
+
+<view wx:if="{{hasInfo == false}}" class="buttonText">没有更多内容</view>

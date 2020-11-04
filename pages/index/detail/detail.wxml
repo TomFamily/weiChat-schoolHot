@@ -1,0 +1,188 @@
+<!-- 美食布局 -->
+<view class="row">
+	<image src="../../../image/yk11.png" class="image1_type" bindtap="preView"></image>
+	<view class="frame2">
+		<view class="row">
+			<text class="title">青椒肉丝</text>
+			<text class="pingfen">9.7</text>
+		</view>
+		<text>在西南大学附近</text>
+		<text>店铺地址</text>
+
+		<view class="row">
+			<view class="column">
+				<view class="anJian" bindtap="isWeat">{{isWantEat}}</view>
+				<text class="text1">多少人想吃</text>
+			</view>
+			<view class="column">
+				<view class="anJian anJian2" bindtap="isEat">{{isEat}}</view>
+				<text class="text1 anJian2">多少人吃过</text>
+			</view>
+			<view class="column daohang">
+				<image src="../../../image/dao1.png" class="daoIamge" bindtap="nevigation"></image>
+				<text bindtap="nevigation">导航</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+<scroll-view class="scroll" scroll-x>
+	<image class=" bc-red" src="../../../image/yk11.png" bindtap="preView"></image>
+	<image class=" bc-red" src="../../../image/yk11.png" bindtap="preView"></image>
+	<image class=" bc-red" src="../../../image/yk11.png" bindtap="preView"></image>
+	<image class=" bc-red" src="../../../image/yk11.png" bindtap="preView"></image>
+	<image class=" bc-red" src="../../../image/yk11.png" bindtap="preView"></image>
+</scroll-view>
+<view class="row jianjie1">
+	<text>美食口味：清淡  甜品  咸</text>
+</view>
+<view class="column jianjie">
+	<text class="jianjieTitle">简介</text>
+	<text class="jianjieContent">热污染区哦呜容物哦呜荣威UR我我如我IE入围我肉并无欧让我如我如我润我UR我比如我如我如我如我与我无偶如我无偶然哦侮辱哦勿扰无人哦勿扰围殴would让我</text>
+</view>
+
+<view class="duanpin">
+	<text class="duanpinLogo">简介</text>
+	<view wx:for="{{1}}">
+		<view class="user">
+			<view class="row">
+				<image src="../../../image/yk.png" class="userHead"></image>
+				<text class="userName">书虫大王</text>
+			</view>
+			<text class="plunContent">我陪我怕日抛沃日疲软配让我日颇为日陪我日聘任为热破熊我我我陪日文平认为皮尔我我外婆日晚破日我怕。</text>
+			<view class="row">
+				<text class="dianzan">点人数</text>
+				<image class="YdImage" src="../../../image/dianzan3.png"></image>
+				<text class="dianzan amar">发表时间</text>
+			</view>
+		</view>
+	</view>
+	<view class="row" bindtap="jumpToDuanping">
+		<text class="plunContent2 row" >查看全部短评</text>
+		<image class="image2" src="../../../image/join1.png"></image>
+	</view>
+</view>
+
+<view class="taolun">
+	<text class="duanpinLogo taolunType">讨论区</text>
+	<view wx:for="{{1}}">
+		<view class="user">
+			<view class="row">
+				<image src="../../../image/yk.png" class="userHead"></image>
+				<text class="userNameTaolun">书虫大王</text>
+			</view>
+			<text class="plunContentTaolun">我陪我怕日抛沃日疲软配让我日颇为日陪我日聘任为热破熊我我我陪日文平认为皮尔我我外婆日晚破日我怕。</text>
+			<view class="row">
+				<text class="dianzan">讨论数量</text>
+			</view>
+		</view>
+	</view>
+	<view class="row" bindtap="jumpToTaolun">
+		<text class="plunContent3 row taolunType" >查看全部讨论</text>
+		<image class="image3" src="../../../image/join1.png"></image>
+	</view>
+</view>
+
+
+
+<!-- 数据填充 -->
+
+
+<view class="row">
+	<image src="{{meishiContent.image_first}}" class="image1_type" bindtap="preView" url="{{meishiContent.image_first}}"></image>
+	<view class="frame2">
+		<view class="row">
+			<text class="title">{{meishiContent.name}}</text>
+			<text class="pingfen">{{meishiContent.score}}</text>
+		</view>
+		<text>在{{meishiContent.school}}附近</text>
+		<text>{{meishiContent.address}}</text>
+
+		<!-- 添加到收藏页 -->
+		<view class="row">
+			<view class="column">
+				<view class="anJian" bindtap="isWeat">{{isWantEat}}</view>
+				<text class="text1">{{meishiContent.want_eat_number}}人想吃</text>
+			</view>
+			<view class="column">
+				<view class="anJian anJian2" bindtap="isEat">{{isEat}}</view>
+				<text class="text1 anJian2">{{meishiContent.eat_number}}人吃过</text>
+			</view>
+			<view class="column daohang">
+				<image src="../../../image/dao1.png" class="daoIamge" bindtap="nevigation"></image>
+				<text bindtap="nevigation">导航</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+<!-- 用户吃过后留下的数据 -->
+<view wx:if="{{meishiContent.eat_record != null}}" class="record column">
+	<text class="record4">我的评价:</text>
+	<text class="record2">{{meishiContent.eat_record.content}}</text>
+	<view class="row ">
+		<text>评分：{{meishiContent.eat_record.user_score}}</text>
+		<text class="dianzan record3">{{meishiContent.eat_record.add_time}}</text>
+	</view>
+</view>
+
+<scroll-view class="scroll" scroll-x>
+	<image class=" bc-red" src="{{meishiContent.image_second}}" bindtap="preView" url="{{meishiContent.image_second}}"></image>
+	<image class=" bc-red" src="{{meishiContent.address_image}}" bindtap="preView" url="{{meishiContent.address_image}}"></image>
+	<image class=" bc-red" src="{{meishiContent.image_third}}" bindtap="preView" url="{{meishiContent.image_third}}"></image>
+	<image class=" bc-red" src="{{meishiContent.image_fourth}}" bindtap="preView" url="{{meishiContent.image_fourth}}"></image>
+	<image class=" bc-red" src="{{meishiContent.image_fifth}}" bindtap="preView" url="{{meishiContent.image_fifth}}"></image>
+</scroll-view>
+
+<!-- 美食口味表签 -->
+<view class="row jianjie1">
+	<text>美食口味：{{meishiContent.flavour}}</text>
+</view>
+<view class="column jianjie">
+	<text class="jianjieTitle">简介:</text>
+	<text class="jianjieContent">{{meishiContent.desc}}</text>
+</view>
+
+<view class="duanpin">
+	<text class="duanpinLogo">短评({{meishiContent.short_comment_number}})</text>
+	<!-- 循环前十个短评 -->
+	<view wx:for="{{duanpinList}}" wx:if="{{index < 10}}">
+		<view class="user">
+			<view class="row">
+				<image src="{{item.user_head_portrait}}" class="userHead" id="{{item.user}}" bindtap="jumpToPeplo"></image>
+				<text class="userName" id="{{item.user}}" bindtap="jumpToPeplo">{{item.user_nick_name}}</text>
+			</view>
+			<text class="plunContent">{{item.content}}</text>
+			<view class="row">
+				<text class="dianzan">{{item.approval_number}}</text>
+				<image class="YdImage" src="../../../image/dianzan3.png" wx:if="{{item.is_approval == 0}}" bindtap="isDianzan" id="{{item.id}}"></image>
+				<image class="YdImage" src="../../../image/dianzan2.png" wx:else bindtap="isDianzan" id="{{item.id}}"></image>
+				<text class="dianzan amar">{{item.add_time}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="row" bindtap="jumpToDuanping">
+		<text class="plunContent2 row" >查看全部评论</text>
+		<image class="image2" src="../../../image/join1.png"></image>
+	</view>
+</view>
+
+<view class="taolun">
+	<text class="duanpinLogo taolunType">讨论({{meishiContent.discuss_number}})</text>
+	<view wx:for="{{taolunList}}" wx:if="{{index < 5}}">
+		<view class="user">
+			<view class="row">
+				<image src="{{item.user_head_portrait}}" class="userHead" id="{{item.id}}" bindtap="jumpToDeatil"></image>
+				<text class="userNameTaolun" id="{{item.id}}" bindtap="jumpToDeatil">{{item.user_nick_name}}</text>
+			</view>
+			<text class="plunContentTaolun" id="{{item.id}}" bindtap="jumpToDeatil">{{item.title}}</text>
+			<view class="row">
+				<text class="dianzan" id="{{item.id}}" bindtap="jumpToDeatil">{{item.comment_number}} 评论</text>
+			</view>
+		</view>
+	</view>
+	<view class="row" bindtap="jumpToTaolun">
+		<text class="plunContent3 row taolunType" >查看全部讨论</text>
+		<image class="image3" src="../../../image/join1.png"></image>
+	</view>
+</view>

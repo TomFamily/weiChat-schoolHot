@@ -1,0 +1,249 @@
+<!--pages/wode/secondPart/pInfo/pInfo.wxml-->
+
+<view>
+	<view class="top-view">
+		<view class="row">
+			<view class="userinfo">
+				<image class="userinfo-avatar" src="../../../../image/yk.png" mode="cover" bindtap="preView"></image>
+				<view class="column">
+					<text class="userinfo-nickname">杨康</text>
+					<view class="row">
+						<text class="yk2">@西南大学</text>
+						<image src="../../../../image/write3.png" class="writeImage" wx:if="{{canChange == true}}" bindtap="chooseSchool"></image>
+					</view>
+				</view>
+
+				<!-- 判断是进点入 -->
+				<view wx:if="{{canChange == false}}" class="row">
+					<text class="infoImageClass" bindtap="sixing">私信</text>
+					<text  wx:if="{{guanzhu == false}}" class="infoImageClass2" bindtap="guanT">关注</text>
+					<text  wx:if="{{guanzhu == true}}" class="infoImageClass2" bindtap="guanT">已关注</text>
+				</view>
+			</view>
+		</view>
+
+		<view class="row">
+			<image src="../../../../image/san.png" class="writeImage4"></image>
+			<text class="texta">个性签名:</text>
+			<input class="texta3" value="你好啊" maxlength="16" disabled="{{!canChange}}" bindtap="inputQianming"></input>
+			<!-- <image src="../../../../image/write3.png" class="writeImage2" wx:if="{{canChange == true}}"></image> -->
+		</view>
+		<view class="row">
+			<image src="../../../../image/jiangz.png" class="writeImage3"></image>
+			<text class="textb">210 赞同 . 999 喜欢 . 134 收藏</text>
+			<!-- <image src="../../../../image/write3.png" class="writeImage2"></image> -->
+		</view>
+
+		<view class="row">
+			<image src="../../../../image/xin.png" class="writeImage5"></image>
+			<text class="textb">210 关注 . 999 粉丝 . 134 访客</text>
+			<!-- <image src="../../../../image/write3.png" class="writeImage2"></image> -->
+		</view>
+
+		<view class="numbers">
+			<view class="column" bindtap="guanzhu">
+				<image src="../../../../image/wjx.png" class="imageA"></image>
+				<text>关注</text>
+			</view>
+			<view class="column" bindtap="fensi">
+				<image src="../../../../image/xin.png" class="imageA"></image>
+				<text>粉丝</text>
+			</view>
+			<view class="column" bindtap="fangke">
+				<image src="../../../../image/zuijin.png" class="imageA"></image>
+				<text>访客</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 动态 -->
+<!-- 0为赞同回答,1为收藏回答,2为回答问题,3为收藏问题,4为提出问题 -->
+
+<view class="frame">
+	<view class="back">
+		<!-- <text>你好啊</text> -->
+		<!-- 动态 -->
+		<view class="tBack">
+			<text class="tText">动态</text>
+		</view>
+		<view wx:for="{{answerArray}}">
+			<!-- 问题 -->
+			<view class="column item" wx:if="{{item.type==2 || item.type==3 || item.type==4}}">
+				<view class="row userMargin">
+					<image class="userHeader" src="../../../../image/yk.png"></image>
+					<text class="userName">书虫大王</text>
+					<text class="userName">.  {{stringList[item.type].name}}</text>
+				</view>
+
+				<text class="title" bindtap="jumpToArtocle">问题标题问题标题问题标题问题标题问题标题问题标题问题标题问题标题</text>
+
+				<view class="row button2">
+					<image class="buttonImage" src="../../../../image/shoucang1.png"></image>
+					<text class="mar1">收藏量</text>
+					<image class="buttonImage mar2" src="../../../../image/xiaoxi.png"></image>
+					<text class="mar1">回答量</text>
+				</view>
+			</view>
+
+			<!-- 回答 -->
+			<view class="item column" wx:if="{{item.type==0 || item.type==1}}">
+				<view class="row userMargin">
+					<image class="userHeader" src="../../../../image/yk.png"></image>
+					<text class="userName">书虫大王</text>
+					<text class="userName">.  {{stringList[item.type].name}}</text>
+				</view>
+
+				<text class="title" bindtap="jumpToArtocle">问题标题问题标题问题标题问题标题问题标题问题标题问题标题问题标题</text>
+
+				<view class="row marContent">
+					<text class="content">书虫大王：葛蓉蓉我我怕日文群殴我怕日文群殴我怕日文群殴日哦疲软期软盘慰问品热偶IQ味脾胃平日外婆人陪我去人怕我人 IP热哦我任务骗人我怕</text>
+				</view>
+				<view class="row button2">
+					<image class="buttonImage" src="../../../../image/dianzan1.png"></image>
+					<text class="mar1">赞同量</text>
+					<image class="buttonImage mar2" src="../../../../image/xiaoxi.png"></image>
+					<text class="mar1">回答量</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 数据填充 -->
+
+<view>
+	<view class="top-view">
+		<view class="row">
+			<view class="userinfo">
+				<image class="userinfo-avatar" src="{{userInfo1.head_portrait}}" mode="cover" bindtap="preView"></image>
+				<view class="column">
+					<text class="userinfo-nickname">{{userInfo1.nick_name}}</text>
+					<view class="row">
+						<text class="yk2">@{{schoolName}}</text>
+						<image src="../../../../image/write3.png" class="writeImage" wx:if="{{canChange == true}}" bindtap="chooseSchool"></image>
+					</view>
+				</view>
+
+				<!-- 判断是哪点入 -->
+				<view wx:if="{{canChange == false}}" class="row">
+					<text class="infoImageClass" bindtap="sixing">私信</text>
+					<text  wx:if="{{guanzhu == false}}" class="infoImageClass2" bindtap="guanT">关注</text>
+					<text  wx:if="{{guanzhu == true}}" class="infoImageClass2" bindtap="guanT">已关注</text>
+				</view>
+			</view>
+		</view>
+
+		<view class="row">
+			<image src="../../../../image/san.png" class="writeImage4"></image>
+			<!-- <text class="texta">{{userInfo1.desc}}</text> -->
+			<!-- <input class="texta" value="你好啊"></input> -->
+			<text class="texta">个性签名:</text>
+			<input class="texta3" value="{{userInfo1.desc}}" maxlength="16" disabled="{{!canChange}}" bindinput="inputQianming"></input>
+		</view>
+		<view class="row">
+			<image src="../../../../image/jiangz.png" class="writeImage3"></image>
+			<text class="textb">{{userInfo1.approval_number}} 赞同 . {{userInfo1.like_number}} 喜欢 . {{userInfo1.collect_number}} 收藏</text>
+			<!-- <image src="../../../../image/write3.png" class="writeImage2"></image> -->
+		</view>
+
+		<view class="row">
+			<image src="../../../../image/xin.png" class="writeImage5"></image>
+			<text class="textb">{{userInfo1.collect_user_number}} 关注 . {{userInfo1.user_be_collect_number}} 粉丝 . {{userInfo1.read_number}} 阅读</text>
+		</view>
+
+		<view class="numbers">
+			<view class="column" bindtap="guanzhu">
+				<image src="../../../../image/wjx.png" class="imageA"></image>
+				<text>关注</text>
+			</view>
+			<view class="column" bindtap="fensi">
+				<image src="../../../../image/xin.png" class="imageA"></image>
+				<text>粉丝</text>
+			</view>
+			<view class="column" bindtap="fangke">
+				<image src="../../../../image/zuijin.png" class="imageA"></image>
+				<text>访客</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+<!-- 动态 -->
+<view class="frame">
+	<view class="back">
+		<!-- <text>你好啊</text> -->
+		<!-- 动态 -->
+		<view class="tBack">
+			<text class="tText">动态</text>
+		</view>
+
+		<view wx:for="{{dongtai}}">
+			<!-- 问题 -->
+			<view class="column item" wx:if="{{item.type==3 || item.type==4}}">
+				<view class="row userMargin">
+					<image class="userHeader" src="{{item.user_head_portrait}}" id="{{item.content.id}}" bindtap="jumpToArtocle"></image>
+					<text class="userName" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.user_nick_name}}</text>
+					<text class="userName" id="{{item.content.id}}" bindtap="jumpToArtocle">.  {{stringList[item.type].name}}</text>
+				</view>
+
+				<text class="title" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.title}}</text>
+
+				<view class="row button2">
+					<image class="buttonImage" src="../../../../image/shoucang1.png" id="{{item.content.id}}" bindtap="jumpToArtocle"></image>
+					<text class="mar1" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.attention_number}} 关注</text>
+					<image class="buttonImage mar2" src="../../../../image/xiaoxi.png" id="{{item.content.id}}" bindtap="jumpToArtocle"></image>
+					<text class="mar1" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.answer_number}} 回答</text>
+					<text class="mar3" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.add_time}}</text>
+				</view>
+			</view>
+
+			<!-- 提出了问题 -->
+			<view class="column item" wx:if="{{item.type==2}}">
+				<view class="row userMargin">
+					<image class="userHeader" src="{{item.user_head_portrait}}" id="{{item.content.id}}" bindtap="jumpToArtocle"></image>
+					<text class="userName" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.user_nick_name}}</text>
+					<text class="userName" id="{{item.content.id}}" bindtap="jumpToArtocle">.  {{stringList[item.type].name}}</text>
+				</view>
+
+				<text class="title" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.question_title}}</text>
+				<view class="row marContent">
+					<text class="content" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.user_nick_name}}：{{item.content.abstract}}</text>
+				</view>
+				<view class="row button2">
+					<image class="buttonImage" src="../../../../image/shoucang1.png" id="{{item.content.id}}" bindtap="jumpToArtocle"></image>
+					<text class="mar1" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.approval_number}} 点赞</text>
+					<image class="buttonImage mar2" src="../../../../image/xiaoxi.png" id="{{item.content.id}}" bindtap="jumpToArtocle"></image>
+					<text class="mar1" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.comment_number}} 评论</text>
+					<text class="mar3" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.add_time}}</text>
+				</view>
+			</view>
+
+			<!-- 回答 -->
+			<view class="item column" wx:if="{{item.type==0 || item.type==1}}">
+				<view class="row userMargin">
+					<image class="userHeader" src="{{item.user_head_portrait}}" id="{{item.content.id}}" bindtap="jumpToArtocle"></image>
+					<text class="userName" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.user_nick_name}}</text>
+					<text class="userName" id="{{item.content.id}}" bindtap="jumpToArtocle">.  {{stringList[item.type].name}}</text>
+				</view>
+
+				<text class="title" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.question_title}}</text>
+
+				<view class="row marContent">
+					<text class="content" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.user_nick_name}}：{{item.content.abstract}}</text>
+				</view>
+				<view class="row button2">
+					<image class="buttonImage" src="../../../../image/dianzan1.png" id="{{item.content.id}}" bindtap="jumpToArtocle"></image>
+					<text class="mar1" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.approval_number}} 赞同</text>
+					<image class="buttonImage mar2" src="../../../../image/xiaoxi.png" id="{{item.content.id}}" bindtap="jumpToArtocle"></image>
+					<text class="mar1" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.content.comment_number}} 评论</text>
+					<text class="mar3" id="{{item.content.id}}" bindtap="jumpToArtocle">{{item.add_time}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

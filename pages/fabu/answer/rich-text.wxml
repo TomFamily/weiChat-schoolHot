@@ -1,0 +1,42 @@
+<!--  键盘弹出页面上移的问题 -->
+<form bindsubmit="formSubmit">
+
+	<view class="ykBorder"></view>
+
+
+	<view class="editor" style="height:{{readOnly?'100%':'60vh'}}">
+		<editor id="editor" adjust-position='false' placeholder="写回答……" showImgSize showImgToolbar showImgResize bindstatuschange="onStatusChange" bindready="onEditorReady" read-only="{{readOnly}}" value="{{titleContent}}">
+		</editor>
+	</view>
+
+	<view class="row mieshi">
+		<text class="tip">是否匿名发布:</text>
+		<text bindtap="isLIMing" class="tip">{{isLimingText}}</text>
+	</view>
+
+	<view class="row mieshi2">
+		<text class="tip" bindtap="save">保存草稿稍后发布？</text>
+	</view>
+
+
+	<!-- 发布按键 -->
+	<button type="primary" formType="submit" class="ykButton">{{button_text}}</button>
+	<!-- </view>    class="ykButton"-->
+
+	<view class="functionCalss">
+		<view wx:if="{{!readOnly}}" class="function">
+			<view class="function1">
+				<view class="function2">
+					<view wx:for="{{function2}}" class="{{item.selected?'f2st':''}}" bindtap="format" data-name="{{item.name}}" data-value="{{item.value}}" data-text="{{item.text}}">
+						<image src="{{item.img}}" mode="aspectFill"></image>
+					</view>
+				</view>
+				<view class="ykBarStyle">
+					<image src="../editor/images/clear.png" mode="aspectFill" bindtap="clear"></image>
+					<image src="../editor/images/redo.png" mode="aspectFill" bindtap="redo"></image>
+					<image src="../editor/images/undo.png" mode="aspectFill" bindtap="undo"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+</form>

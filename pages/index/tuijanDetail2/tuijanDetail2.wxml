@@ -1,0 +1,100 @@
+<import src="../../../components/wxParse/wxParse.wxml" />
+<!-- <view class="column">
+	<view class="b column">
+		<text class="questionTitle">网络上有哪些免费的教育资源？</text>
+		<text class="aContent">我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述我是问题描述</text>
+		<view class="row">
+			<text class="answer1">有多少回答</text>
+			<text class="answer1">有多少关注</text>
+			<text class="answer1">有多少浏览</text>
+			<text class="answer1">西南大学</text>
+		</view>
+	</view>
+
+	<view class="row">
+		<view class="button" bindtap="writeComment">
+			<image class="writeImage" src="../../../image/write.png"></image>
+			<text>写回答</text>
+		</view>
+		<view class="button ykB">关注话题</view>
+	</view>
+
+	<view class="content column">
+		<view class="row yk">
+			<text class="text3">回答 905</text>
+			<text class="paixu" bindtap="sort">{{sortText}}</text>
+		</view>
+
+		<view class="item column" wx:for="{{pinglunList}}" bindtap="jump">
+			<view class="row">
+				<image class="userPicture" src="../../../image/yk.png"></image>
+				<text class="userName">书虫大王Mike</text>
+			</view>
+			<text>9月7日，外交部发言人赵立坚主持例行记者会。言人赵立坚主持例行记者会美国国务院发言人有关的说法完全不符合事实，是倒打一耙...</text>
+			<view class="row">
+				<text class="yk2">多少赞同</text>
+				<text class="yk2 yk3">多少喜欢</text>
+				<text class="yk2 yk3">多少评论</text>
+				<text class="yk2 yk3">多久前发</text>
+			</view>
+		</view>
+	</view>
+	<view class="comment" bindtap="writeComment">
+		<image class="commentIMage" src="../../../image/read.png"></image>
+	</view>
+</view> -->
+
+
+<!-- 数据填充 -->
+<view class="column">
+	<view class="b column">
+		<text class="questionTitle" id="{{questionInfo.id}}">{{questionInfo.title}}</text>
+
+		<view class="aContent" id="{{questionInfo.id}}">
+			<template is="wxParse" data="{{wxParseData:newsDetailData.nodes}}" />
+		</view>
+
+
+		<view class="row">
+			<text class="answer1" id="{{questionInfo.id}}">{{questionInfo.answer_number}}回答</text>
+			<text class="answer1" id="{{questionInfo.id}}">{{questionInfo.attention_number}}关注</text>
+			<text class="answer1" id="{{questionInfo.id}}">{{questionInfo.scan_number}}浏览</text>
+			<text class="answer1" id="{{questionInfo.id}}">{{questionInfo.school}}</text>
+		</view>
+	</view>
+
+	<view class="row">
+		<view class="button" wx:if="{{questionInfo.has_answer_id == -1}}">
+			<image class="writeImage" src="../../../image/write.png" id="{{questionInfo.id}}" bindtap="writeComment"></image>
+			<text id="{{questionInfo.id}}" bindtap="writeComment">写回答</text>
+		</view>
+		<view wx:else class="button" bindtap="checkSelf" id="{{questionInfo.has_answer_id}}">查看我的回答</view>
+		<!-- 关注话题 -->
+		<view class="button ykB" id="{{questionInfo.has_answer_id}}" bindtap="Attention">{{isAttention}}</view>
+	</view>
+
+	<view class="content column">
+		<view class="row yk">
+			<text class="text3">回答 {{questionInfo.answer_number}}</text>
+			<text class="paixu" bindtap="sort">{{sortText}}</text>
+		</view>
+
+		<!-- 回答列表 -->
+		<view class="item column" wx:for="{{answerInfo}}">
+			<view class="row">
+				<image class="userPicture" src="{{item.user_head_portrait}}" bindtap="jump" id="{{item.id}}"></image>
+				<text class="userName" bindtap="jump" id="{{item.id}}">{{item.user_nick_name}}</text>
+			</view>
+			<text bindtap="jump" id="{{item.id}}">{{item.abstract}}</text>
+			<view class="row">
+				<text class="yk2" bindtap="jump" id="{{item.id}}">{{item.approval_number}}赞同</text>
+				<text class="yk2 yk3" bindtap="jump" id="{{item.id}}">{{item.like_number}}喜欢</text>
+				<text class="yk2 yk3" bindtap="jump" id="{{item.id}}">{{item.comment_number}}评论</text>
+				<text class="yk2 yk3" bindtap="jump" id="{{item.id}}">{{item.modify_time}}发布</text>
+			</view>
+		</view>
+	</view>
+	<view class="comment">
+		<image class="commentIMage" src="../../../image/read.png" id="{{questionInfo.id}}" bindtap="writeComment"></image>
+	</view>
+</view>

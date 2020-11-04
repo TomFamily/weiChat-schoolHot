@@ -1,0 +1,53 @@
+/* pages/fabu/fabu.wxss */
+page{
+  /* background-color: gray; */
+}
+.frame{
+  display: flex;
+  flex-direction: row;
+}
+ .hRen{
+   /* background-color: gray; */
+   margin-top: 200rpx;
+  display: flex;
+  flex-direction: column;
+  height: 900rpx;
+  width: 350rpx;
+  margin-left: 150rpx;
+} 
+
+.hRen1{
+  width: 300rpx;
+  height: 243rpx;
+  margin-top:10rpx;
+}
+.hRen2{
+  width: 300rpx;
+  height: 301rpx;
+  margin-top: -10.5rpx;
+  margin-left: -5rpx;
+}
+.hRen3{
+  width: 280rpx;
+  height: 330rpx;
+  margin-top: -45rpx;
+  margin-left: 8rpx;
+}
+.qipaoFrame{
+  display: flex;
+  flex-direction: column;
+  width: 250rpx;
+  
+}
+.qipao{
+  width: 200rpx;
+  height: 125rpx;
+  margin-top: 420rpx;
+  margin-left: -100rpx;
+}
+.qipao2{
+  width: 200rpx;
+  height: 125rpx;
+  margin-top: 700rpx;
+  margin-left: -210rpx;
+}

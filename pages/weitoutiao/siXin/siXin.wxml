@@ -1,0 +1,34 @@
+<view wx:for="{{3}}" class="b" bindtap="junpToChat">
+	<view class="item">
+		<image src="../../../image/yk.png" class="headImage"> </image>
+		<view class="column">
+			<text class="nameStyle">书虫大王</text>
+			<text class="problemHead" bindtap="junpToChat">你好啊，我是书虫大王</text>
+		</view>
+		<text class="text3">多久前</text>
+		<view class="item_tongZhi_praise">
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 数据填写 -->
+<!-- wx:if="{{item.type == 0}}" -->
+<view wx:for="{{message}}" class="b" >
+
+	<view class="item">
+		<image src="{{item.data.head_portrait}}" class="headImage" bindtap="junpToChat" id="{{item.data.from_user}}" ></image>
+		<view class="column">
+			<text class="nameStyle" bindtap="junpToChat" id="{{item.data.from_user}}">{{item.data.nick_name}}</text>
+			<text class="problemHead" bindtap="junpToChat" id="{{item.data.from_user}}">{{item.data.message}}</text>
+		</view>
+		<text class="text3" bindtap="junpToChat" id="{{item.data.from_user}}" >{{item.data.time}}</text>
+	</view>
+</view>
+
+<view wx:if="{{hasInfo == false}}" class="buttonText">没有更多内容</view>
+
+
+<button bindtap="close">关闭websocket</button>
+<button bindtap="choose">获取聊天记录</button>

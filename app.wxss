@@ -1,0 +1,202 @@
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+
+.one-px-border::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: '';
+  background-color: #f0f0f0;
+}
+
+/* 底部提示语 */
+.buttonText {
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  margin-top: 20rpx;
+}
+
+.buttonText2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(75, 72, 72);
+  margin-top: 40vh;
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
+  .one-px-border ::after {
+    transform: scaleY(0.5);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),
+(min-resolution: 3dppx) {
+  .one-px-border ::after {
+    transform: scaleY(0.333);
+  }
+}
+
+.comment {
+  position: fixed;
+  bottom: 20vw;
+  width: 12vw;
+  margin-left: 83vw;
+  height: 12vw;
+  border-top: 1rpx solid #ccc;
+  background-color: #666161;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment2 {
+  position: fixed;
+  bottom: 20vw;
+  width: 12vw;
+  margin-left: 83vw;
+  height: 12vw;
+  border-top: 1rpx solid #ccc;
+  background-color: #666161;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentIMage {
+  width: 8vw;
+  height: 8vw;
+  margin-left: 1vw;
+}
+
+.commentIMage2 {
+  width: 8vw;
+  height: 8vw;
+  /* margin-left: 1vw; */
+}
+
+.button {
+  background-color: #ffffff;
+  height: 80rpx;
+  font-weight: bold;
+  color: #4169E1;
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  width: 50vw;
+  border-right: 1rpx solid #ccc;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* 底部三图标布局 */
+.text1 {
+  color: #ccc;
+  font-size: 22rpx;
+}
+
+.ykframe {
+  margin-left: 55rpx;
+  margin-top: 1vw;
+}
+
+.text2 {
+  margin-left: 220rpx;
+}
+
+
+.imageY {
+  width: 6vw;
+  height: 6vw;
+}
+
+/* 写作图标 */
+.writeImage {
+  width: 4vw;
+  height: 4vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
+}
+
+/* 点赞图标 */
+.dImage {
+  width: 4vw;
+  height: 4vw;
+  margin-top: 2.5vw;
+}
+
+.dImage3 {
+  width: 4.8vw;
+  height: 4.8vw;
+  margin-left: 3vw;
+}
+
+.dImage2 {
+  width: 5vw;
+  height: 5vw;
+  /* margin-top: 2.2vw; */
+  margin-left: 2vw;
+}
+
+.dImage4 {
+  width: 8vw;
+  height: 8vw;
+  margin-top: 1vw;
+  margin-left: 2vw;
+}
+
+.dianzanText {
+  color: #ccc;
+  margin-top: 1vw;
+  margin-left: 2vw;
+}
+
+.dianzanText1 {
+  color: #2894FF;
+  margin-top: 1vw;
+  margin-left: 2vw;
+}
+
+.background {
+  background-color: #dae4ee;
+  border-radius: 25rpx;
+  height: 8vw;
+  padding-right: 2vw;
+  margin-top: 2vw;
+  margin-left: 3vw;
+}
+
+/* .backgroundWidth {
+} */

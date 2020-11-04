@@ -1,0 +1,229 @@
+<!-- 第一次构建：没有实际参数 -->
+<NavComponent is-search="true" bind:commonNavAttr="commonNavAttr" bindtap="search"></NavComponent>
+<view class='page column'>
+	<view class="nav-blank row">
+		<view class="tapClass row">
+			<view class='header row'>
+				<view class='header-panel one-px-border row'>
+					<block wx:for='{{headerTitleName}}' wx:key='{{item.nameID}}'>
+						<view data-id='{{item.nameID}}' data-url='{{item.nameUrl}}' data-newstype='{{item.newsType}}' class="header-title {{item.nameID == tapID? 'header-title-active':''}}" bindtap='headerTitleClick'>
+							{{item.name}}
+						</view>
+					</block>
+					<text class="paixu" bindtap="tipChange">{{tipText}}</text>
+					<image src="../../image/add1.png" class="ykText" bindtap="fabu"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+	<!-- 推荐 -->
+	<view class="ykTuijian" wx:if="{{a == 1}}">
+		<!-- 默认拍讯 -->
+		<view wx:for='{{yk}}' class='tuiJianItem' wx:if="{{paixun == 0}}">
+
+			<!-- 没有回答 -->
+			<view wx:if="{{item.type == 1}}">
+				<view id="{{item.id}}" class='tuiJianTitle' id="{{item.id}}" type="{{item.type}}" bindtap="newDetail">25岁做什么，可在5年后受益匪浅？你知道吗</view>
+				<view class="tuiJianAnswer">
+					<text class="tuiJianContent2" id="{{item.id}}" type="{{item.type}}">我觉得对于重大疾病保险，首先要清楚的也是的内容是对"重大疾病"有个...</text>
+				</view>
+			</view>
+
+			<!-- 0位有回答，1位没有回答 -->
+			<view class="user-motto" id="{{item.id}}" wx:if="{{item.type == 0}}">
+				<view class="tuiJianFrame">
+					<view class='tuiJianTitle' id="{{item.id}}" bindtap="newDetail" type="{{item.type}}">25岁做什么，可在5年后受益匪浅？你知道吗</view>
+					<view class="tuiJianFrame2">
+						<view class="tuiJianFrame3">
+							<view class="tuiJianUser">
+								<image class="userPicture" src="../../image/yk.png" id="{{item.id}}"></image>
+								<text class="tuiJianUser_NickName" id="{{item.id}}">书虫大王</text>
+							</view>
+
+							<view class="tuiJianAnswer">
+								<text class="tuiJianContent" id="{{item.id}}" type="{{item.type}}">我觉得对于重大疾病保险，首先要清楚的也是的内容是对"重大疾病"有个...</text>
+								<view class='tuiJianBotton'>
+								</view>
+								<view class='bottom'>
+									<view class='tuiJianBotton1' id="{{item.id}}">多少关注</view>
+									<view class='tuiJianBotton2' id="{{item.id}}"> 多少浏览</view>
+								</view>
+							</view>
+						</view>
+						<view class='imgs' id="{{item.id}}">
+							<image src='http://img1.3lian.com/2015/w7/85/d/101.jpg' id="{{item.id}}" class='tuiJianImage'></image>
+						</view>
+					</view>
+				</view>
+			</view>
+
+		</view>
+
+		<!-- 按时间排序 -->
+		<view wx:if="{{paixun == 1}}" wx:for="{{5}}" class="tuiJianItem" bindtap="newDetail">
+			<view class='tuiJianTitle' id="{{item.id}}">25岁做什么，可在5年后受益匪浅？你知道吗</view>
+			<view class="tuiJianAnswer">
+				<text class="tuiJianContent2" id="{{item.id}}">我觉得对于重大疾病保险，首先要清楚的也是的内容是对"重大疾病"有个...</text>
+			</view>
+		</view>
+	</view>
+
+	<!-- 热榜 -->
+	<view wx:if="{{a == 2}}" class='item' wx:for='{{3}}' wx:for-index="idx">
+		<view class="page2" bindtap="newDetail" id="{{item.id}}">
+			<text class="reBangStyleNumber" id="{{item.id}}">{{idx + 1}}</text>
+
+			<view class="page">
+				<view class='reBangTitle' id="{{item.id}}">特兰普炮轰NBA：就像一个政治组织，收视率一直很差！</view>
+				<view class='bottom'>
+					<view class='bottom-name' id="{{item.id}}">所属学校</view>
+				</view>
+			</view>
+			<view class='imgs'>
+				<image src='http://img1.3lian.com/2015/w7/85/d/101.jpg' id="{{item.id}}" class='newImage'></image>
+			</view>
+		</view>
+
+	</view>
+</view>
+
+
+
+<!-- 美食 -->
+<view wx:if="{{a == 3}}" class='item' wx:for='{{3}}' wx:for-index="idx" id="{{item.id}}">
+	<view class="page2" id="{{item.id}}">
+		<text class="reBangStyleNumber" id="{{item.id}}" bindtap="newDetail">{{idx + 1}}</text>
+		<view class="page">
+			<view class='meiShiTitle' id="{{item.id}}" bindtap="newDetail">青椒肉食</view>
+			<view class='mBottom2'>
+				<view class='bottom-name2' id="{{item.id}}" bindtap="newDetail">美食描述</view>
+			</view>
+			<view class='mBottom'>
+				<view class='bottom-name' id="{{item.id}}" bindtap="newDetail">9.2</view>
+			</view>
+		</view>
+		<view class='imgs'>
+			<image src='http://img1.3lian.com/2015/w7/85/d/101.jpg' id="{{item.id}}" class='newImage' bindtap="newDetail"></image>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 数据填充 -->
+
+<!-- 推荐 -->
+<view class="ykTuijian" wx:if="{{a == 1}}">
+	<!-- 默认拍讯 -->
+	<view wx:for='{{newList}}' class='tuiJianItem' wx:if="{{paixun == 0}}">
+
+		<!-- 1：没有回答,只有问题 -->
+		<view wx:if="{{item.type == 1}}">
+			<view id="{{item.id}}" class='tuiJianTitle' id="{{item.id}}" type="{{item.type}}" bindtap="newDetail">{{item.title}}</view>
+			<view class="tuiJianAnswer">
+				<text class="tuiJianContent2" id="{{item.id}}" type="{{item.type}}" bindtap="newDetail">{{item.content}}</text>
+			</view>
+			<view class='bottom'>
+				<view class='tuiJianBotton1' id="{{item.id}}" bindtap="newDetail"> {{item.attention_number}} 关注</view>
+				<view class='tuiJianBotton2' id="{{item.id}}" bindtap="newDetail"> {{item.scan_number}} 浏览</view>
+			</view>
+		</view>
+
+		<!-- 0：有问题和问题回答 -->
+		<view class="user-motto" id="{{item.id}}" wx:else>
+			<view class="tuiJianFrame">
+				<view class='tuiJianTitle' id="{{item.id}}" type="{{item.type}}" bindtap="newDetail">{{item.question_title}}</view>
+				<view class="tuiJianFrame2">
+					<view class="tuiJianFrame3">
+						<view class="tuiJianUser">
+							<image class="userPicture" src="{{item.user_head_portrait}}" id="{{item.id}}" type="{{item.type}}" bindtap="newDetail"></image>
+							<text class="tuiJianUser_NickName"  id="{{item.id}}" type="{{item.type}}" bindtap="newDetail">{{item.user_nick_name}}</text>
+						</view>
+
+						<view class="tuiJianAnswer">
+							<text wx:if="{{item.first_image == null}}" class="tuiJianContent"  id="{{item.id}}" type="{{item.type}}" bindtap="newDetail">{{item.abstract}}</text>
+							<text wx:else class="tuiJianContent"  id="{{item.id}}" type="{{item.type}}" bindtap="newDetail">{{item.abstract}}</text>
+							<view class='tuiJianBotton'>
+							</view>
+							<view class='bottom'>
+								<view class='tuiJianBotton1' id="{{item.id}}" type="{{item.type}}" bindtap="newDetail">{{item.approval_number}}赞同</view>
+								<view class='tuiJianBotton2' id="{{item.id}}" type="{{item.type}}" bindtap="newDetail">{{item.comment_number}}讨论</view>
+							</view>
+						</view>
+					</view>
+					<view class='imgs' id="{{item.id}}">
+						<image src='{{item.first_image}}' id="{{item.id}}" type="{{item.type}}" bindtap="newDetail" class='tuiJianImage'></image>
+					</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+	<!-- 按时间排序 -->
+	<view wx:if="{{paixun == 1}}" wx:for="{{newList}}" class="tuiJianItem">
+		<view class='tuiJianTitle' id="{{item.id}}" bindtap="newDetail">{{item.title}}</view>
+		<view class="tuiJianAnswer">
+			<text class="tuiJianContent2" id="{{item.id}}" bindtap="newDetail">{{item.content}}</text>
+		</view>
+		<view class='bottom'>
+			<view class='tuiJianBotton1' id="{{item.id}}" bindtap="newDetail">{{item.scan_number}} 浏览</view>
+			<view class='tuiJianBotton2' id="{{item.id}}" bindtap="newDetail"> {{item.attention_number}} 关注</view>
+		</view>
+	</view>
+</view>
+
+<!-- 热榜 -->
+<view wx:if="{{a == 2}}" class='item' wx:for='{{reBangList}}' wx:for-index="idx">
+	<view class="page2" id="{{item.id}}" wx:if="{{item.image}}">
+		<text class="reBangStyleNumber" id="{{item.id}}"  bindtap="newDetail">{{idx + 1}}</text>
+		<view class="page">
+			<view class='reBangTitle' id="{{item.id}}" bindtap="newDetail">{{item.title}}</view>
+			<view class='bottom'>
+				<view class='bottom-name' id="{{item.id}}" bindtap="newDetail">{{item.school}}</view>
+			</view>
+		</view>
+		<view class='imgs'>
+			<!-- 没有图片 -->
+			<image src='{{item.image}}' id="{{item.id}}" class='newImage' bindtap="newDetail"></image>
+		</view>
+	</view>
+
+	<view class="page2" bindtap="newDetail" id="{{item.id}}" wx:else>
+		<text class="reBangStyleNumber" id="{{item.id}}">{{idx + 1}}</text>
+		<view class="page">
+			<view class='reBangTitle2' id="{{item.id}}">{{item.title}}</view>
+			<view class='bottom'>
+				<view class='bottom-name' id="{{item.id}}">{{item.school}}</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+<!-- 美食 -->
+<view wx:if="{{a == 3}}" class='item' wx:for='{{meiShiList}}' wx:for-index="idx">
+	<view class="page2" id="{{item.id}}">
+		<text class="reBangStyleNumber" id="{{item.id}}" bindtap="v">{{idx + 1}}</text>
+		<view class="page">
+			<view class='meiShiTitle' id="{{item.id}}" bindtap="newDetail">{{item.name}}</view>
+			<view class='mBottom2'>
+				<view class='bottom-name2' id="{{item.id}}" bindtap="newDetail">{{item.desc}}</view>
+			</view>
+			<view class='bottom'>
+				<view class='bottom-name' id="{{item.id}}" bindtap="newDetail">{{item.score}}</view>
+			</view>
+		</view>
+		<view class='imgs'>
+			<image src='{{item.image_first}}' id="{{item.id}}" class='newImage' bindtap="newDetail"></image>
+		</view>
+	</view>
+</view>
+
+<view class="comment2" bindtap="shuaXin">
+	<image class="commentIMage2" src="../../image/shuaxing2.png"></image>
+</view>
+
+<text class="buttonText">没有更多内容</text>

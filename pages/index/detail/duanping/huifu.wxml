@@ -1,0 +1,42 @@
+<view class="item row" wx:for="{{2}}">
+	<image src="../../../../image/yk.png" class="userPicture"></image>
+	<view class="column text2">
+		<text class="userName">Mike</text>
+		<text class="text3">表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。</text>
+		<view class="row">
+			<text class="text4 ">多久发表</text>
+			<text class="yka">评分:</text>
+			<text class="text4 b">点赞人数</text>
+			<image src="../../../../image/dianzan1.png" class="YdImage"></image>
+		</view>
+	</view>
+</view>
+<text class="buttonText">没有更多内容</text>
+
+<view class="comment" bindtap="jumpToFabu">
+	<image class="commentIMage" src="../../../../image/read.png"></image>
+</view>
+
+
+<!-- 填充数据 -->
+<view class="item row" wx:for="{{contentList}}">
+	<!-- 用户数据 -->
+	<image src="{{item.user_head_portrait}}" class="userPicture" id="{{item.user}}" bindtap="jumpToUser"></image>
+	<view class="column text2">
+		<text class="userName" id="{{item.user}}" bindtap="jumpToUser">{{item.user_nick_name}}</text>
+
+		<text class="text3">{{item.content}}</text>
+		<view class="row">
+			<text class="text4 ">{{item.add_time}}</text>
+			<text class=" yka">评分:{{item.user_score}}</text>
+			<text class="text4 b">{{item.approval_number}}</text>
+			<image class="YdImage" src="../../../../image/dianzan1.png" wx:if="{{item.is_approval == 0}}" bindtap="isDianzan" id="{{item.id}}" is="{{item.is_approval}}"></image>
+			<image class="YdImage" src="../../../../image/dianzan2.png" wx:else bindtap="isDianzan" id="{{item.id}}"></image>
+		</view>
+	</view>
+</view>
+<text class="buttonText">没有更多内容</text>
+
+<view class="comment" bindtap="jumpToFabu">
+	<image class="commentIMage" src="../../../../image/read.png"></image>
+</view>

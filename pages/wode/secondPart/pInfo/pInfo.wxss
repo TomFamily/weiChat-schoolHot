@@ -1,0 +1,419 @@
+.top-view {
+  color: white;
+  /* padding: 40rpx; */
+  /* background-image: url(https://upload-images.jianshu.io/upload_images/15368151-2ea86b95395f1a82.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240); */
+}
+
+page {
+  background-color: #fff;
+}
+
+.top-view .user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-view .user .avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.top-view .user .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200rpx;
+}
+
+.top-view .site {
+  background-color: rgba(0, 0, 0, 0.16);
+  padding: 20rpx;
+  border-top-left-radius: 32rpx;
+  border-bottom-left-radius: 32rpx;
+}
+
+.imageA {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 10rpx;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 27rpx;
+  color: black;
+  font-weight: bold;
+  padding-bottom: 0rpx;
+  margin-bottom: 3vw;
+  /* background-color: darksalmon; */
+  margin-left: 10vw;
+  width: 80vw;
+  margin-top: 60rpx;
+}
+
+
+
+.infoClass {
+  margin-left: 250rpx;
+  color: black;
+}
+
+.infoImageClass {
+  width: 110rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+  vertical-align: middle;
+  margin-top: 35rpx;
+  border-radius: 25rpx;
+  opacity: 0.6;
+  color: #fff;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+}
+
+.infoImageClass2 {
+  width: 110rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+  vertical-align: middle;
+  margin-top: 35rpx;
+  border-radius: 25rpx;
+  opacity: 0.6;
+  color: #fff;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  /* margin-bottom: 10rpx;   */
+}
+
+.img3 {
+  width: 80rpx;
+  height: 60rpx;
+}
+
+.part4 {
+  margin-top: 30rpx;
+}
+
+.part5 {
+  margin-top: 30rpx;
+}
+
+.part6 {
+  margin-top: 30rpx;
+}
+
+.block6 {
+  width: 620rpx;
+  margin-left: 20rpx;
+}
+
+.bgclrwhite {
+  background-color: Owhite;
+}
+
+.avatar {
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  border: 3px solid Owhite;
+}
+
+.arrow {
+  width: 4vw;
+  height: 4vw;
+  vertical-align: middle;
+  margin-bottom: 20rpx;
+}
+
+.part2 {
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+
+.block2 {
+  border-right: 1px solid Owhite;
+  padding-right: 80rpx;
+}
+
+.boxTap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding-top: 50rpx;
+  margin-top: 50rpx;
+
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding-top: 50rpx;
+  margin-top: 50rpx;
+
+}
+
+.clrff {
+  color: 口#fff;
+}
+
+.pad20 {
+  padding: 20rpx;
+}
+
+.font32 {
+  font-size: 32rpx;
+}
+
+.bgc1r3e {
+  background-color: ■#3E3E3E;
+}
+
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background-color: #2894FF; */
+  background-image: url(https://upload-images.jianshu.io/upload_images/15368151-2517e3a04e4b66a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240);
+  margin-top: 30rpx;
+  width: 94vw;
+  margin-left: 3vw;
+  border-radius: 20rpx;
+  height: 13vh;
+}
+
+.userinfo-avatar {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  margin-left: 4vw;
+  background-color: #2894FF;
+}
+
+.userinfo-nickname {
+  color: #fff;
+  /* font-weight: 600; */
+  font-size: larger;
+  width: 250rpx;
+  /* background-color: aqua; */
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.Border {
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  margin-right: 1rpx;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vw;
+  background-color: aqua;
+  width: 90vw;
+}
+
+.writeImage {
+  width: 3vw;
+  height: 3vw;
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+
+.qianming {
+  /* background-color: chartreuse; */
+  width: 95vw;
+}
+
+.yk2 {
+  color: #ccc;
+  /* margin-left: 20rpx; */
+  font-size: 25rpx;
+  /* width: 150rpx; */
+  margin-top: 10rpx;
+  /* background-color: aqua; */
+}
+
+.texta {
+  color: black;
+  margin-left: 1vw;
+  margin-top: 5vw;
+}
+.texta3 {
+  color: black;
+  margin-left: 1vw;
+  margin-top: 5vw;
+  /* background-color: #2894FF; */
+  /* width: 65vw; */
+}
+.writeImage2 {
+  width: 3vw;
+  height: 3vw;
+  margin-top: 5vw;
+  /* margin-left: 1vw; */
+}
+.textb {
+  color: black;
+  margin-left: 2.2vw;
+  margin-top: 4vw;
+}
+
+.writeImage3 {
+  margin-left: 4vw;
+  margin-top: 4vw;
+  width: 5vw;
+  height: 5vw;
+}
+.writeImage5 {
+  margin-left: 4vw;
+  margin-top: 4vw;
+  width: 4.5vw;
+  height:4.5vw;
+}
+
+.writeImage4 {
+  margin-left: 3.5vw;
+  margin-top: 4vw;
+  width: 6.5vw;
+  height: 7vw;
+}
+
+
+
+
+.userHeader {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  margin-left: 2vw;
+}
+
+.userMargin {
+  margin-top: 20rpx;
+}
+
+.marContent {
+  margin-left: 2vw;
+  width: 92vw;
+}
+
+.userName {
+  margin-top: 8rpx;
+  font-weight: bold;
+  font-size: 27rpx;
+  color: rgb(71, 67, 67);
+  margin-left: 10rpx;
+}
+
+
+.title {
+  font-weight: bold;
+  margin-top: 10rpx;
+  margin-left: 2vw;
+  width: 92vw;
+}
+
+.content {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  font-size: 27rpx;
+}
+
+.button2 {
+  margin-left: 2vw;
+  color: #ccc;
+  font-size: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.mar1 {
+  margin-left: 10rpx;
+}
+.mar3 {
+  margin-left: 30rpx;
+}
+.mar2 {
+  margin-left: 5vw;
+}
+
+.buttonImage {
+  width: 4vw;
+  height: 3.8vw;
+}
+
+.frame {
+  /* margin-left: 3vw;
+  width: 94vw; */
+  background-color: #ffffff;
+  margin-top: 40rpx;
+  padding-top: 5vw;
+}
+
+.back {
+  margin-left: 3vw;
+  width: 94vw;
+  background-color: #A9A9A9;
+  border-radius: 20rpx;
+}
+
+.item {
+  border-bottom: 1rpx solid #fff;
+  width: 94vw;
+}
+
+.tBack {
+  border-bottom: 1rpx solid #fff;
+  margin-left: 2vw;
+  padding-top: 3vw;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  padding-bottom: 3vw;
+}
+
+
+.duanpinLogo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+  font-weight: bold;
+  height: 80rpx;
+  border-bottom: 1rpx solid #ccc;
+  width: 86.5vw;
+  /* background-color: honeydew; */
+}
+
+.duanpin {
+  background-color: #7b7979;
+  border-radius: 15rpx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15rpx;
+  margin-left: 15rpx;
+}

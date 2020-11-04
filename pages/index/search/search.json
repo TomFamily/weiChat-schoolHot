@@ -1,0 +1,10 @@
+{
+  "navigationBarTextStyle":"white",
+  "navigationBarTitleText":" ",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#F5F5F5",
+  "usingComponents": {
+    "searchHighlightTextView": "../../../components/searchHighlightTextView/searchHighlightTextView"
+  }
+}

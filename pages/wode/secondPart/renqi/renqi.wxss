@@ -1,0 +1,67 @@
+.duck {
+  margin-top: 10vh;
+  margin-left: 20vw;
+  width: 496rpx;
+  height: 630rpx;
+  /* margin-bottom: 20vh; */
+}
+.frame{
+  width: 100vw;
+  height: 35vh;
+  /* background-color: aqua; */
+}
+
+.text {
+  font-size: 40rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.text5 {
+  margin-left: 20rpx;
+}
+
+.text6 {
+  margin-left: 60rpx;
+}
+
+.text3 {
+  margin-left: 80rpx;
+}
+
+.text4 {
+  margin-left: 100rpx;
+}
+.text7{
+ margin-left: 40rpx;
+}
+
+.mar {
+  margin-top: 5vw;
+}
+.mar2{
+  margin-top: 30vw;
+}
+.tColor{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 55rpx;
+  font-weight: bolder;
+  /* color: #FF0000; */
+  font-style: oblique;
+}
+.tColor1{
+  color: #008000;
+}
+.tColor2{
+  color: #FF69B4;
+}
+.tColor3{
+  color: #800080;
+}
+.tColor4{
+  color: #FF0000;
+}
+.tColor5{
+  color: #2894FF;
+}

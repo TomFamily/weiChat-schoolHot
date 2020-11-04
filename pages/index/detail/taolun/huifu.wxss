@@ -1,0 +1,119 @@
+/* pages/index/tuijanDetail3/pinglun/pinglun.wxss */
+
+page{
+  background-color:	#F5F5F5;
+}
+.text1{
+  color: rgb(15, 14, 14);
+  margin-left: 20rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.item4{
+  margin-top: 10rpx;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  width: 100vw;
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #ccc;
+}
+.title11{
+  width: 100vw;
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #ccc;
+  padding-bottom: 20rpx;
+}
+.titleText{
+  margin-left: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  width: 30vw ;
+}
+.titleSort{
+  color: #ccc;
+  font-size: 25rpx;
+  margin-left: 50vw;
+}
+
+.item2{
+  border-top: 1rpx solid #ccc;
+}
+.userPicture {
+  width: 55rpx;
+  height: 55rpx;
+  border-radius: 50%;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+.userName {
+  font-weight: bold;
+  margin-top: 25rpx;
+  /* margin-left: 10rpx; */
+  font-size: 26rpx;
+  color: #ccc;
+}
+.text2{
+  margin-left: 20rpx;
+  /* background: black; */
+  width: 650rpx;
+}
+.text3{
+  margin-right: 15rpx;
+  /* background: black; */
+}
+.text4{
+  color: #ccc;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 25rpx;
+}
+.yka{
+  color: #ccc;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 25rpx;
+  margin-left: 50rpx;
+}
+ 
+.b{
+  margin-left: 50rpx;
+}
+
+.functionCalss {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 90rpx;
+  border-top: 1rpx solid #ccc;
+  background-color: #ffffff;
+  color: #ccc;
+}
+.image1{
+  width: 68rpx;
+  height: 57rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.text5{
+ margin-top: 30rpx;
+ margin-left: 30rpx;
+}
+.text6{
+  color: rgb(18, 145, 60);
+  margin-left: 400rpx;
+  margin-top: 30rpx;
+}
+
+

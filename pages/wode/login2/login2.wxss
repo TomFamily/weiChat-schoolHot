@@ -1,0 +1,49 @@
+/* pages/login2/login2.wxss */
+.headView {
+  margin: 90rpx 50rpx 90rpx 50rpx; /*上右下左*/
+}
+
+.headImageView{
+  display: block;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 25rpx;
+  margin-bottom: 0rpx;
+  height: 50rpx;
+}
+
+  
+.headImage{
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+  
+  .titleText {
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+  margin-bottom: 10rpx;
+  font-size: 14px;
+  color: #020e0f;
+  text-align: center;
+  }
+  
+  .contentText {
+  margin-left: 25rpx;
+  margin-top: 0rpx;
+  margin-bottom: 0rpx;
+  font-size: 14px;
+  color: #666;
+  text-align: center; 
+  }
+  
+  .authBtn {
+    margin-left: 25rpx;
+    margin-top: 35rpx;
+    margin-right: 25rpx;
+    height: 45rpx;
+    font-size: 17.5rpx;
+  }
+  
+    
+  

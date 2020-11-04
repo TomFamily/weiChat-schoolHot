@@ -1,0 +1,41 @@
+<view class="column text">
+
+	<view class="frame">
+		<view class="text5 mar row" wx:if="{{info.approval > 0}}">
+			<text>昨日有</text>
+			<text class="tColor4 tColor">{{info.approval}}</text>
+			<text>人点赞</text>
+		</view>
+		<view class="text7 mar row" wx:if="{{info.attention > 0}}">
+			<text>昨日新增</text>
+			<text class="tColor4 tColor">{{info.attention}}</text>
+			<text>个粉丝</text>
+		</view>
+
+		<view class="text6 mar row" wx:if="{{info.read > 0}}">
+			<text>昨日新增阅读数</text>
+			<text class="tColor4 tColor">{{info.read}}</text>
+			<text>份</text>
+		</view>
+
+
+		<view class="text3 mar row" wx:if="{{info.collect > 0}}">
+			<text>昨日有</text>
+			<text class="tColor4 tColor">{{info.collect}}</text>
+			<text>人收藏了你的文章</text>
+		</view>
+
+		<view class="text4 mar row" wx:if="{{info.like > 0}}">
+			<text>昨日有</text>
+			<text class="tColor4 tColor">{{info.like}}</text>
+			<text>人表示喜欢你的文章</text>
+		</view>
+
+		<view class="text6 mar2 row" wx:if="{{info.approval == 0 && info.attention == 0 && info.read == 0 && info.collect == 0 && info.like == 0}}">
+			<text>昨日还没有收获人气值，加油鸭！</text>
+		</view>
+
+	</view>
+
+	<image src="../../../../image/duck.png" class="duck"></image>
+</view>

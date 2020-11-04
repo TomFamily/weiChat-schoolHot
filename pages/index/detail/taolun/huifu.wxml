@@ -1,0 +1,38 @@
+<view class="title11 row">
+	<text class="titleText">讨论：</text>
+	<text bindtap="sort" class="titleSort">{{sort}}</text>
+</view>
+
+<view class="item row" wx:for="{{list}}">
+	<image src="../../../../image/yk.png" class="userPicture" id="{{item.id}}" bindtap="jumpToDeatil"></image>
+	<view class="column text2">
+		<text class="userName" id="{{item.id}}" bindtap="jumpToDeatil">Mike</text>
+		<text class="text3" id="{{item.id}}" bindtap="jumpToDeatil">表情包半天？你开玩笑吧，动态的一般一个月快的半个月，还有被推高的可能。</text>
+		<view class="row">
+			<text class="text4 " id="{{item.id}}" bindtap="jumpToDeatil">评论数量</text>
+		</view>
+	</view>
+</view>
+
+
+<view class="comment" bindtap="jumpToFabu">
+	<image class="commentIMage" src="../../../../image/read.png"></image>
+</view>
+
+
+<!-- 填充数据 -->
+<view class="item row" wx:for="{{taolunList}}">
+	<image src="{{item.user_head_portrait}}" class="userPicture" id="{{item.id}}" bindtap="jumpToDeatil"></image>
+	<view class="column text2">
+		<text class="userName" id="{{item.id}}" bindtap="jumpToDeatil">{{item.user_nick_name}}</text>
+		<text class="text3" id="{{item.id}}" bindtap="jumpToDeatil">{{item.title}}</text>
+		<view class="row">
+			<text class="text4 " id="{{item.id}}" bindtap="jumpToDeatil">{{item.comment_number}} 评论</text>
+		</view>
+	</view>
+</view>
+<text class="buttonText">没有更多内容</text>
+
+<view class="comment" bindtap="jumpToFabu">
+	<image class="commentIMage" src="../../../../image/read.png"></image>
+</view>

@@ -1,0 +1,15 @@
+<!--pages/fabu/fabu.wxml-->
+
+<View class="frame">
+
+ <!-- <image src="../../image/yk1.png" class="hRen"></image> -->
+<image class="hRen">
+  <image src="../../image/yk6.png" class="hRen1"></image>
+  <image src="../../image/yk7.png" class="hRen2" bindtap="faProblem"></image>
+  <image src="../../image/yk9.png" class="hRen3" bindtap="faThink"></image>
+</image> 
+
+	<!-- <image src="../../image/yk5.png" class="yk4"></image> -->
+	<image src="../../image/qipao1.png" class="qipao"></image>
+  <image src="../../image/qipao2.png" class="qipao2"></image>
+</View>

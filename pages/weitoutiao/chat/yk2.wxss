@@ -1,0 +1,81 @@
+/* pages/yk2/yk2.wxss */
+page {
+  background-color: #f1f1f1;
+}
+
+.inputRoom {
+  width: 100vw;
+  height: 16vw;
+  border-top: 1px solid #ccc;
+  background-color: #f1f1f1;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+
+input {
+  width: 90vw;
+  height: 9.33vw;
+  background-color: #fff;
+  border-radius: 40rpx;
+  margin-left: 8vw;
+  padding: 0 3vw;
+  font-size: 28rpx;
+  color: #444;
+}
+
+.leftMsg {
+  font-size: 35rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: #fff;
+  /* margin-right: ; */
+  /* width: 65vw; */
+  margin-left: -1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+}
+
+.rightMsg {
+  font-size: 35rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: #96EB6A;
+  margin-right: -1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+}
+.touxiang2{
+  width: 11vw;
+  height: 11vw;
+  background-color: #444;
+}
+.touxiang2B{
+  background-color: aqua;
+  width: 11vw;
+  height: 11vw;
+  /* margin-left: 11vw; */
+  margin-right: - 5vw;
+}
+.ykText{
+  color: #fff;
+  background-color: #2894FF;
+  opacity: 0.8;
+  width: 13vw;
+  height: 8vw;
+  margin-left: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:25vw;
+}
+input{
+  width: 74%;
+}
+.ykChat{
+  margin-top: 30rpx;
+}

@@ -1,0 +1,89 @@
+<!--第一部分-->
+<view>
+	<view class="top-view">
+		<view class="row">
+			<view class="userinfo">
+				<!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信登录 </button> -->
+				<button wx:if="{{hasUserInfo == false}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信登录 </button>
+				<block wx:else>
+					<image class="userinfo-avatar" src="{{headerImage}}" mode="cover" bindtap="preView"></image>
+					<text class="userinfo-nickname">{{userName}}</text>
+					<image class="arrow1" src="../../image/self2.png" bindtap="navigateToSelfInfo"></image>
+				</block>
+			</view>
+		</view>
+
+		<view class="numbers">
+			<view class="column" bindtap="navigateToAttention">
+				<image src="../../image/wjx.png" class="imageA"></image>
+				<text>关注</text>
+			</view>
+			<view class="column" bindtap="navigateToCollect">
+				<image src="../../image/xin.png" class="imageA"></image>
+				<text>收藏</text>
+			</view>
+			<view class="column" bindtap="navigateToBrow">
+				<image src="../../image/zuijin.png" class="imageA"></image>
+				<text>最近</text>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+<!--第六部分-->
+<view class="box bgclrwhite part6 pad20 font32">
+
+	<view class="Border">
+		<view class="block6">
+			<view bindtap="navigateToProblem">我的发布</view>
+		</view>
+		<view>
+			<image bindtap="navigateToProblem" class="arrow" src='/image/right_icon.png'></image>
+		</view>
+	</view>
+
+	<!-- <view class="Border">
+		<view class="block6">
+			<view bindtap="navigateToBean">我的粉丝</view>
+		</view>
+		<view>
+			<image bindtap="navigateToBean" class="arrow" src='/image/right_icon.png'></image>
+		</view>
+	</view> -->
+
+	<view class="Border">
+		<view class="block6">
+			<view bindtap="navigateToAnswer">
+				我的动态
+			</view>
+		</view>
+		<view>
+			<image bindtap="navigateToAnswer" class="arrow" src='/image/right_icon.png'></image>
+		</view>
+	</view>
+
+	<view class="Border">
+		<view class="block6">
+			<view bindtap="navigateToBox">
+				草稿信箱
+			</view>
+		</view>
+		<view>
+			<image bindtap="navigateToBox" class="arrow" src='/image/right_icon.png'></image>
+		</view>
+	</view>
+
+	<view class="Border">
+		<view class="block6">
+			<view bindtap="navigateToRenqi">
+				我的人气
+			</view>
+		</view>
+		<view>
+			<image bindtap="navigateToRenqi" class="arrow" src='/image/right_icon.png'></image>
+		</view>
+	</view>
+
+
+</view>
